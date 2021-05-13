@@ -10,6 +10,9 @@ public class ObjetoCajeable : MonoBehaviour
     // Tamaño que tendrá el objeto instanciado, la base es 100, por lo que tiene que ser mayor a 100.
     public float tamano;
 
+    // Booleanos de reconocimiento de camion
+    bool enCamion = false;
+
     // Componente Mesh Renderer para poder desactivarlo al entrar en el camión.
     MeshRenderer mr;
 
@@ -23,11 +26,16 @@ public class ObjetoCajeable : MonoBehaviour
 
     // Revisará cuando entre en contacto con el interior del camión.
     // El interior del camión tiene que tener el tag de "camion".
+    // El booleano bloqueará el que se instancien más cajas
     private void OnTriggerEnter(Collider camion)
     {
         if (camion.CompareTag("camion"))
-        { 
-            Invoke("ConvertirEnCaja", 3f);  // Invocará la función de instanciación de la cajita.
+        {
+            if(enCamion == false)
+            {
+                enCamion = true; // booleano para bloquear la instanciación
+                Invoke("ConvertirEnCaja", 3f);  // Invocará la función de instanciación de la cajita.
+            }
         }
     }
 
@@ -36,6 +44,7 @@ public class ObjetoCajeable : MonoBehaviour
     {
         mr.enabled = false;  // Desactiva el mesh renderer del objeto.
         cajita.transform.localScale = new Vector3(tamano, tamano, tamano);  // Escala el prefab para que tenga el mismo tamaño que el objeto que quedará dentro.
+        cajita.transform.SetParent(gameObject.transform); // Setea el objeto como padre y la caja lo seguirá siempre.
         Instantiate(cajita, transform.position, transform.rotation);  // Instancia finalmente la caja.
     }
 }

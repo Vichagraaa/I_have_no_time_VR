@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3247f10aea587704a99b834ef0111358
+guid: ddc417e0dff57594caa3ed572d02b4ea
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,13 +7,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat_Zapatos
-    second: {fileID: 2100000, guid: 552b238d892b031499febba355fdc1f1, type: 2}
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat_Zapatos_suela
-    second: {fileID: 2100000, guid: ea2077058e817e141b322c01ca1c92f1, type: 2}
+      name: Mat_Planta_hojas
+    second: {fileID: 2100000, guid: aa36110974511d2428a053c084613301, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Planta_macetero
+    second: {fileID: 2100000, guid: 8e5422ef24b2d4f4f8b9fd27c85cb912, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Planta_tallo
+    second: {fileID: 2100000, guid: aa36110974511d2428a053c084613301, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Planta_tierra
+    second: {fileID: 2100000, guid: 552b238d892b031499febba355fdc1f1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

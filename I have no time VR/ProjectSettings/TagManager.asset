@@ -7,6 +7,8 @@ TagManager:
   - Placeable
   - projectile
   - FxTemporaire
+  - Hand
+  - camion
   layers:
   - Default
   - TransparentFX

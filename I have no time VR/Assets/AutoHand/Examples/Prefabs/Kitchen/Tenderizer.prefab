@@ -61,6 +61,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -87,6 +88,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!54 &3391128054549870717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -142,11 +144,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  body: {fileID: 0}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 25, y: 0, z: 0}
   handType: 0
   singleHandOnly: 0
+  parentOnGrab: 1
   releaseOnTeleport: 0
+  lockHandOnGrab: 0
   hightlightMaterial: {fileID: 0}
   throwMultiplyer: 1
   pullApartBreakOnly: 1
@@ -194,7 +199,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5143e42808965614a9bb64f4880aaf33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftHand: 1
   editorHand: {fileID: 0}
   rightPose:
     handOffset: {x: -0.13535032, y: 0.048440956, z: 0.0127433315}

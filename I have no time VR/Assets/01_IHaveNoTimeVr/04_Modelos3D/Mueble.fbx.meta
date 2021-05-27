@@ -8,17 +8,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Mueble_base
-    second: {fileID: 2100000, guid: fb14f9806c9e0b44a878a3e1d550370a, type: 2}
+    second: {fileID: 2100000, guid: e9bbb47483a643f4ab934232aa11cc31, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Mueble_cajones
-    second: {fileID: 2100000, guid: 552b238d892b031499febba355fdc1f1, type: 2}
+    second: {fileID: 2100000, guid: fb14f9806c9e0b44a878a3e1d550370a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Mueble_manillas
     second: {fileID: 2100000, guid: 0b64a19823d18b9408a3f7d163af9b97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e40e8b9f5e8ebd4bb0a149817e479cc
+guid: ff02f21e37cdbf74687945720b70db39
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
@@ -7,13 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat_Sillon_base
-    second: {fileID: 2100000, guid: a6cb4d10742cf464e9c6be777f43ea96, type: 2}
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Sillon_cojin
-    second: {fileID: 2100000, guid: fdb222160279e5c4ea4e5b12f8184a57, type: 2}
+    second: {fileID: 2100000, guid: 0842a6797decf38409cd4a8a06c69d43, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

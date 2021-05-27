@@ -564,6 +564,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -5.59
       objectReference: {fileID: 0}
+    - target: {fileID: 645056540621773532, guid: 0f3e979beed37ee46a6d056c76563669, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.512
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0f3e979beed37ee46a6d056c76563669, type: 3}
       propertyPath: m_Name
       value: Garage

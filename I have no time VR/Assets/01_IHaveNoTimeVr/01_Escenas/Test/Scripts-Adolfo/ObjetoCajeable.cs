@@ -12,7 +12,7 @@ public class ObjetoCajeable : MonoBehaviour
 
     // Booleanos de reconocimiento de camion
     bool enCamion = false;
-    
+
 
 
     // Revisará cuando entre en contacto con el interior del camión.
@@ -22,12 +22,27 @@ public class ObjetoCajeable : MonoBehaviour
     {
         if (camion.CompareTag("camion"))
         {
-            if(enCamion == false)
+            if (enCamion == false)
             {
                 enCamion = true; // booleano para bloquear la instanciación.
-                Destroy(gameObject, 3f); // Destruye el objeto a los 3 segundos.
+                Invoke("TresSegundos", 3f); // Llama a la función pa' destruir el objeto e instanciar la caja.
             }
         }
+    }
+
+    // Si el objeto es sacado del camión, ya no se podrá destruir o instanciar la caja.
+    private void OnTriggerExit(Collider camion)
+    {
+        if (camion.CompareTag("camion"))
+        {
+            enCamion = false;
+            CancelInvoke("TresSegundos");
+        }
+    }
+
+    void TresSegundos()
+    {
+        Destroy(gameObject); // Destruye el objeto pasados 3 segundos.
     }
 
     // Al destruirse, instancia la cajita

@@ -21,7 +21,7 @@ public class MuroRomper : MonoBehaviour
     {
         if (collision.gameObject.tag=="Hand")
         {
-            Instantiate(muroFragmentos, transform.position, Quaternion.identity);
+            Instantiate(muroFragmentos, transform.position,transform.rotation);
             Destroy(this.gameObject);
         }
     }

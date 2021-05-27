@@ -4,7 +4,12 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Placeable
+  - projectile
+  - FxTemporaire
+  - Hand
   - camion
+  - Caja
   layers:
   - Default
   - TransparentFX
@@ -14,6 +19,7 @@ TagManager:
   - UI
   - 
   - 
+  - PostProcessing
   - 
   - 
   - 
@@ -24,15 +30,14 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PlacePoint
+  - Hand
+  - HandReleasing
+  - HandHolding
+  - Grabbable
+  - Grabbing
+  - Holding
+  - Releasing
   - 
   - 
   - 

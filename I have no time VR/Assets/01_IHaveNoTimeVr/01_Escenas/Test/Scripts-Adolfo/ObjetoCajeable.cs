@@ -7,12 +7,13 @@ public class ObjetoCajeable : MonoBehaviour
 {
     // Objeto instanciable, la cajita.
     public GameObject cajita;
-    // Tamaño que tendrá el objeto instanciado, la base es 100, por lo que tiene que ser mayor a 100.
+    // Tamaño que tendrá el objeto instanciado, la base es 100,
+    // por lo que tiene que ser mayor a 100.
     public float tamano;
 
     // Booleanos de reconocimiento de camion
     bool enCamion = false;
-
+    
 
 
     // Revisará cuando entre en contacto con el interior del camión.
@@ -22,10 +23,11 @@ public class ObjetoCajeable : MonoBehaviour
     {
         if (camion.CompareTag("camion"))
         {
-            if (enCamion == false)
+            if(enCamion == false)
             {
                 enCamion = true; // booleano para bloquear la instanciación.
-                Invoke("TresSegundos", 3f); // Llama a la función pa' destruir el objeto e instanciar la caja.
+                // Llama a la función pa' destruir el objeto e instanciar la caja.
+                Invoke("TresSegundos", 3f);
             }
         }
     }
@@ -48,7 +50,9 @@ public class ObjetoCajeable : MonoBehaviour
     // Al destruirse, instancia la cajita
     private void OnDestroy()
     {
-        cajita.transform.localScale = new Vector3(tamano, tamano, tamano);  // Escala el prefab para que tenga el mismo tamaño que el objeto que quedará dentro.
-        Instantiate(cajita, transform.position, transform.rotation);  // Instancia finalmente la caja.
+        // Escala el prefab para que tenga el mismo tamaño que el objeto que quedará dentro.
+        cajita.transform.localScale = new Vector3(tamano, tamano, tamano);
+        // Instancia finalmente la caja.
+        Instantiate(cajita, transform.position, transform.rotation);
     }
 }

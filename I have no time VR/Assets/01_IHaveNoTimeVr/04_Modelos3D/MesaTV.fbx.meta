@@ -8,12 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_MesaTv_base
-    second: {fileID: 2100000, guid: e9bbb47483a643f4ab934232aa11cc31, type: 2}
+    second: {fileID: 2100000, guid: f6fd0991682753d4e97817bb6f079bbf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_MesaTv_patas
     second: {fileID: 2100000, guid: ea2077058e817e141b322c01ca1c92f1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

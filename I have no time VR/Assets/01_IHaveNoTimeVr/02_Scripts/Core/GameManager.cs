@@ -13,13 +13,16 @@ public class GameManager : MonoBehaviour
     //Duracion del nivel 
     public int levelDuration = 86;
 
+    //Estados del juego
+    public bool gameBegin = false;
+    public bool isPaused = false;
+    public bool gameFinish = false;
 
     //Contador inicial 
     public bool initialTakingAway = false;
     public int initialTimerDuration = 3;
     public GameObject text2;
-    public bool gameBegin = false;
-
+   
 
     //Contador de nivel
     public GameObject text1;
@@ -41,11 +44,16 @@ public class GameManager : MonoBehaviour
 
     //Menu de pausa;
     public GameObject pauseMenu;
-    public bool isPaused = false;
+
+
+    //Menu final
+    public GameObject finalCanvas;
+    
     void Start()
     {
         hidePostProcessing();
         pauseMenu.SetActive(false);
+        finalCanvas.SetActive(false);
         rapidMusic = (levelDuration / 4);
         text1.GetComponent<Text>().text = "00:" + levelDuration;
         text2.GetComponent<Text>().text = "00:" + initialTimerDuration;
@@ -56,7 +64,7 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
-        if (isPaused == false) 
+        if (isPaused == false && gameFinish == false) 
         {
             if (Input.GetButtonDown("Jump"))
             {
@@ -81,9 +89,16 @@ public class GameManager : MonoBehaviour
                     accelerateMusic();
                     showPostProcessing();
                 }
+
+                if (levelDuration <= 0) 
+                {
+                    normalizeMusic();
+                    finalCanvas.SetActive(true);
+                    gameFinish = true;
+                }
             }
         }
-        if (isPaused == true) 
+        if (isPaused == true && gameFinish == false) 
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -147,6 +162,24 @@ public class GameManager : MonoBehaviour
         pauseMenu.SetActive(false);
         isPaused = false;
     }
+
+    //Voids para cambio de escena y quitar la app
+
+    public void nextScene() 
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void loadMenu() 
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void quitGame() 
+    {
+        Application.Quit();
+    }
+
 
     //Corrutina Contador inicial 
     IEnumerator InitialTimerTake()

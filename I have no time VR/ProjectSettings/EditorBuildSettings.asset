@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Demo_URP/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/01_IHaveNoTimeVr/01_Escenas/Test/Core/CoreGame.unity
+    guid: 88207118af363d341949741d3b3b8aa8
+  - enabled: 1
+    path: "Assets/01_IHaveNoTimeVr/01_Escenas/Test/Test_Ba\xF1o_Reescalado.unity"
+    guid: 14857b2a49b69c54b8ebd6ed2054a56e
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2db0a3cf372631f489b54ccd7ca1ddef, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: b75e31b005c07bd4f91eb1bb3ea29dee, type: 2}

@@ -23,17 +23,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Control_botones03
-    second: {fileID: 2100000, guid: aa36110974511d2428a053c084613301, type: 2}
+    second: {fileID: 2100000, guid: a6cb4d10742cf464e9c6be777f43ea96, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Control_botones04
-    second: {fileID: 2100000, guid: 0b64a19823d18b9408a3f7d163af9b97, type: 2}
+    second: {fileID: 2100000, guid: aa36110974511d2428a053c084613301, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Control_botones05
-    second: {fileID: 2100000, guid: a6cb4d10742cf464e9c6be777f43ea96, type: 2}
+    second: {fileID: 2100000, guid: 46d0a182be420a5429e5bc8ff30349ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

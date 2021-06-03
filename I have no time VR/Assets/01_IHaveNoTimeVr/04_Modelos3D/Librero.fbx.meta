@@ -13,17 +13,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Librero_puerta01
-    second: {fileID: 2100000, guid: 552b238d892b031499febba355fdc1f1, type: 2}
+    second: {fileID: 2100000, guid: 30dfd66405ce96e4d828db9344f7e851, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Librero_puerta02
-    second: {fileID: 2100000, guid: 552b238d892b031499febba355fdc1f1, type: 2}
+    second: {fileID: 2100000, guid: a8ab4c315ee848048b5410aebf85cdad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_Librero_puerta02.001
-    second: {fileID: 2100000, guid: b6968fee3b450d54bb7404fe50445b2c, type: 2}
+    second: {fileID: 2100000, guid: a8ab4c315ee848048b5410aebf85cdad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

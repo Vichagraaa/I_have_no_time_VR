@@ -12,23 +12,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat_LuzTecho_base02
-    second: {fileID: 2100000, guid: ea2077058e817e141b322c01ca1c92f1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Mat_LuzTecho_pantalla01
-    second: {fileID: 2100000, guid: 7a22bb3e3ca83d64aaaccda42642399a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Mat_LuzTecho_pantalla02
-    second: {fileID: 2100000, guid: fdb222160279e5c4ea4e5b12f8184a57, type: 2}
+    second: {fileID: 2100000, guid: a8ab4c315ee848048b5410aebf85cdad, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Mat_LuzTecho_uniones
-    second: {fileID: 2100000, guid: 7a22bb3e3ca83d64aaaccda42642399a, type: 2}
+    second: {fileID: 2100000, guid: a8ab4c315ee848048b5410aebf85cdad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Outline
+    second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

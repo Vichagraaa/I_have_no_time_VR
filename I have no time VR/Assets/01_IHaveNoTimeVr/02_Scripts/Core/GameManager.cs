@@ -216,6 +216,13 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    //Void sumar punto de ira 
+    public void addIraPoints(int iraPoints) 
+    {
+        countIra += iraPoints;
+    }
+
+
 
     //Corrutina Contador inicial 
     IEnumerator InitialTimerTake()

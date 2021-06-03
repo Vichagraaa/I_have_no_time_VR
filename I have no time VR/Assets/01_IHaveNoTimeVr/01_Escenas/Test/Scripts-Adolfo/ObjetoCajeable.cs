@@ -44,15 +44,12 @@ public class ObjetoCajeable : MonoBehaviour
 
     void TresSegundos()
     {
-        Destroy(gameObject); // Destruye el objeto pasados 3 segundos.
-    }
-
-    // Al destruirse, instancia la cajita
-    private void OnDestroy()
-    {
         // Escala el prefab para que tenga el mismo tamaño que el objeto que quedará dentro.
         cajita.transform.localScale = new Vector3(tamano, tamano, tamano);
         // Instancia finalmente la caja.
         Instantiate(cajita, transform.position, transform.rotation);
+        Destroy(gameObject); // Destruye el objeto pasados 3 segundos.
     }
+
+  
 }

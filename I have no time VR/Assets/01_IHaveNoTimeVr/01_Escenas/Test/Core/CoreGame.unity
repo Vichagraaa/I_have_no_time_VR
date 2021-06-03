@@ -1056,7 +1056,7 @@ MonoBehaviour:
   contadorInicial: {fileID: 308881653}
   contadorNivel: {fileID: 640375483}
   takingAway: 0
-  levelCount: 0
+  levelCount: 86
   m_volumen: {fileID: 1058252651}
   m_speed: 2
   levelMusic: {fileID: 1192446616}

@@ -21,11 +21,11 @@ public class GameManager : MonoBehaviour
     //Contador inicial 
     public bool initialTakingAway = false;
     public int initialTimerDuration = 3;
-    public GameObject text2;
+    public GameObject contadorInicial;
    
 
     //Contador de nivel
-    public GameObject text1;
+    public GameObject contadorNivel;
     public bool takingAway = false;
     public int levelCount;
     
@@ -48,16 +48,25 @@ public class GameManager : MonoBehaviour
 
     //Menu final
     public GameObject finalCanvas;
-    
+
+    //Ira
+    public GameObject nIra;
+    public int countIra = 0;
+    public int limitIra = 10;
+    public bool restando = false;
+    public bool full = false;
+
     void Start()
     {
         hidePostProcessing();
         pauseMenu.SetActive(false);
         finalCanvas.SetActive(false);
         rapidMusic = (levelDuration / 4);
-        text1.GetComponent<Text>().text = "00:" + levelDuration;
-        text2.GetComponent<Text>().text = "00:" + initialTimerDuration;
+        contadorNivel.GetComponent<Text>().text = "00:" + levelDuration;
+        contadorInicial.GetComponent<Text>().text = "00:" + initialTimerDuration;
         levelMusic.GetComponent<AudioSource>().pitch = pitchMusic;
+        countIra = 0;
+        nIra.GetComponent<Text>().text = "" + countIra;
 
     }
 
@@ -72,7 +81,7 @@ public class GameManager : MonoBehaviour
             }
             if (initialTakingAway == false && initialTimerDuration >= 0)
             {
-                Debug.Log("Hola");
+                //Debug.Log("Hola");
                 StartCoroutine(InitialTimerTake());
             }
             if (initialTakingAway == false && initialTimerDuration <= 0)
@@ -80,14 +89,13 @@ public class GameManager : MonoBehaviour
                 gameBegin = true;
                 if (takingAway == false && levelDuration > 0)
                 {
-                    text2.SetActive(false);
+                    contadorInicial.SetActive(false);
                     StartCoroutine(TimerTake());
                 }
 
                 if (levelCount == (levelDuration - rapidMusic))
                 {
                     accelerateMusic();
-                    showPostProcessing();
                 }
 
                 if (levelDuration <= 0) 
@@ -96,6 +104,34 @@ public class GameManager : MonoBehaviour
                     finalCanvas.SetActive(true);
                     gameFinish = true;
                 }
+            }
+            if (Input.GetButtonDown("Fire2") && restando == false)
+            {
+                countIra++;
+                nIra.GetComponent<Text>().text = "" + countIra;
+            }
+
+            if (countIra == limitIra)
+            {
+                full = true;
+                showPostProcessing();
+                accelerateMusic();
+
+            }
+
+            if (full == true && restando == false)
+            {
+                StartCoroutine(TakeDown());
+            }
+
+
+            if (countIra <= 0)
+            {
+                full = false;
+                StopCoroutine(TakeDown());
+                restando = false;
+                hidePostProcessing();
+                normalizeMusic();
             }
         }
         if (isPaused == true && gameFinish == false) 
@@ -187,7 +223,7 @@ public class GameManager : MonoBehaviour
         initialTakingAway = true;
         yield return new WaitForSeconds(1);
         initialTimerDuration--;
-        text2.GetComponent<Text>().text = "00:" + initialTimerDuration;
+        contadorInicial.GetComponent<Text>().text = "00:" + initialTimerDuration;
         initialTakingAway = false;
     }
     
@@ -198,7 +234,18 @@ public class GameManager : MonoBehaviour
         takingAway = true;
         yield return new WaitForSeconds(1);
         levelDuration--;
-        text1.GetComponent<Text>().text = "00:" + levelDuration;
+        contadorNivel.GetComponent<Text>().text = "00:" + levelDuration;
         takingAway = false;
+    }
+
+    //Corrutina Ira
+    IEnumerator TakeDown()
+    {
+
+        restando = true;
+        yield return new WaitForSeconds(1);
+        countIra--;
+        nIra.GetComponent<Text>().text = "" + countIra;
+        restando = false;
     }
 }

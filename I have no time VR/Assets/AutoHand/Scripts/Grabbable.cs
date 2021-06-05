@@ -16,6 +16,7 @@ namespace Autohand {
         public TamanoOjeto tamanoObjeto;
         public int iraPoints = 0;
         public bool sumeIra = false;
+       
 
         [Header("Holding Settings")]
         [Tooltip("The physics body to connect this colliders grab to - if left empty will default to local body")]
@@ -204,12 +205,6 @@ namespace Autohand {
         /// <summary>Called by the hand whenever this item is grabbed</summary>
         public virtual void OnGrab(Hand hand) {
 
-            if (sumeIra == false)
-            {
-                GameManager gamemanager = hand.GetComponent<GameManager>();
-                gamemanager.addIraPoints(iraPoints);
-                sumeIra = true;
-            }
 
             if (lockHandOnGrab)
                 hand.GetComponent<Rigidbody>().isKinematic = true;
@@ -226,6 +221,15 @@ namespace Autohand {
                 placePoint.Remove(this);
 
             OnGrabEvent?.Invoke(hand, this);
+
+               
+
+            if (sumeIra == false)
+            {
+
+               
+                sumeIra = true;
+            }
         }
 
 

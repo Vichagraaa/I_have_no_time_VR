@@ -16,7 +16,9 @@ public class SecondaryButtonEvent : UnityEvent<bool> { }
 public class MenuActivarPrueba : MonoBehaviour
 {
     //Duracion del nivel 
-    public int levelDuration = 86;
+
+    public int minutos = 1;
+    public int levelDuration = 30;
 
     //Estados del juego
     public bool gameBegin = false;
@@ -102,12 +104,17 @@ public class MenuActivarPrueba : MonoBehaviour
                 StartCoroutine(TimerTake());
             }
 
-            if (levelCount == (levelDuration - rapidMusic))
+            if (levelCount == (levelDuration - rapidMusic)&& minutos== 0)
             {
                 accelerateMusic();
             }
+            if (levelDuration<=0 && minutos>0)
+            {
+                minutos--;
+                levelDuration = 60;
 
-            if (levelDuration <= 0)
+            }
+            if (levelDuration <= 0 && minutos ==0)
             {
                 normalizeMusic();
                 finalCanvas.SetActive(true);
@@ -239,7 +246,11 @@ public class MenuActivarPrueba : MonoBehaviour
         takingAway = true;
         yield return new WaitForSeconds(1);
         levelDuration--;
-        contadorNivel.GetComponent<Text>().text = "00:" + levelDuration;
+        contadorNivel.GetComponent<Text>().text = "0"+minutos+ ":" + levelDuration;
+        if (levelDuration<=9)
+        {
+            contadorNivel.GetComponent<Text>().text = "0" + minutos + ":0" + levelDuration;
+        }
         takingAway = false;
     }
 

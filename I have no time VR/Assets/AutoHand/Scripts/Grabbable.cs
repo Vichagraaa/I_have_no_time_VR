@@ -5,6 +5,18 @@ using UnityEngine.Events;
 
 namespace Autohand {
     public class Grabbable : MonoBehaviour {
+
+        //Interaccion Ira
+        public enum TamanoOjeto
+        {
+            Grande,
+            Mediano,
+            Chico
+        }
+        public TamanoOjeto tamanoObjeto;
+        public int iraPoints = 0;
+        public bool sumeIra = false;
+
         [Header("Holding Settings")]
         [Tooltip("The physics body to connect this colliders grab to - if left empty will default to local body")]
         public Rigidbody body;
@@ -95,6 +107,24 @@ namespace Autohand {
             OnAwake();
         }
 
+        void Start()
+        {
+            if (tamanoObjeto == TamanoOjeto.Grande)
+            {
+                iraPoints = 3;
+            }
+
+            if (tamanoObjeto == TamanoOjeto.Mediano)
+            {
+                iraPoints = 2;
+            }
+
+            if (tamanoObjeto == TamanoOjeto.Chico)
+            {
+                iraPoints = 1;
+            }
+        }
+
         /// <summary>Virtual substitute for Awake()</summary>
         public virtual void OnAwake() {
             if(heldBy == null)
@@ -173,7 +203,15 @@ namespace Autohand {
 
         /// <summary>Called by the hand whenever this item is grabbed</summary>
         public virtual void OnGrab(Hand hand) {
-            if(lockHandOnGrab)
+
+            if (sumeIra == false)
+            {
+                GameManager gamemanager = hand.GetComponent<GameManager>();
+                gamemanager.addIraPoints(iraPoints);
+                sumeIra = true;
+            }
+
+            if (lockHandOnGrab)
                 hand.GetComponent<Rigidbody>().isKinematic = true;
 
             if(parentOnGrab)

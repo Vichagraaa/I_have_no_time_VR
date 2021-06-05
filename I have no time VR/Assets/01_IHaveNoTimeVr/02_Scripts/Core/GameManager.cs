@@ -58,10 +58,11 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        levelCount = levelDuration;
         hidePostProcessing();
         pauseMenu.SetActive(false);
         finalCanvas.SetActive(false);
-        rapidMusic = (levelDuration / 4);
+        rapidMusic = (levelDuration / 4) * 3;
         contadorNivel.GetComponent<Text>().text = "00:" + levelDuration;
         contadorInicial.GetComponent<Text>().text = "00:" + initialTimerDuration;
         levelMusic.GetComponent<AudioSource>().pitch = pitchMusic;
@@ -75,7 +76,7 @@ public class GameManager : MonoBehaviour
         
         if (isPaused == false && gameFinish == false) 
         {
-            if (Input.GetButtonDown("Jump"))
+            if (Input.GetButtonDown("Jump") && restando == false)
             {
                 pauseGame();
             }
@@ -93,7 +94,7 @@ public class GameManager : MonoBehaviour
                     StartCoroutine(TimerTake());
                 }
 
-                if (levelCount == (levelDuration - rapidMusic))
+                if (levelDuration <= (levelCount - rapidMusic))
                 {
                     accelerateMusic();
                 }
@@ -125,13 +126,17 @@ public class GameManager : MonoBehaviour
             }
 
 
-            if (countIra <= 0)
+            if (countIra <= 0 && isPaused == false)
             {
                 full = false;
                 StopCoroutine(TakeDown());
                 restando = false;
                 hidePostProcessing();
-                normalizeMusic();
+                if (levelDuration >= (levelCount - rapidMusic)) 
+                {
+                    Debug.Log("Normalizomusica");
+                    normalizeMusic();
+                }
             }
         }
         if (isPaused == true && gameFinish == false) 

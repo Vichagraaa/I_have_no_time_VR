@@ -9,6 +9,7 @@ public class ContadorCaja : MonoBehaviour
     public Text objetos;
     public int objetosTotal;
     public Text win;
+    public GameObject wina;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,7 @@ public class ContadorCaja : MonoBehaviour
         }
         if(contador==objetosTotal)
         {
-            win.gameObject.SetActive(true);
+            wina.gameObject.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider caja)
@@ -52,6 +53,6 @@ public class ContadorCaja : MonoBehaviour
     {
         contador = 0;
         actualizar();
-        win.gameObject.SetActive(false);
+        wina.gameObject.SetActive(false);
     }
 }

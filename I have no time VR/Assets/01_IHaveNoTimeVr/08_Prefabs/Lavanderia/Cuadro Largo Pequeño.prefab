@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5765419050166656858}
   - component: {fileID: 5653153417009319162}
   m_Layer: 0
-  m_Name: "Cuadro largo peque\xF1o"
+  m_Name: "Cuadro Largo Peque\xF1o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -4246479402191905792, guid: e3e79f49efba3d249a2f25165f6f78c8, type: 3}
-  - {fileID: 4309859850662032359, guid: e3e79f49efba3d249a2f25165f6f78c8, type: 3}
+  - {fileID: 2100000, guid: 48582ae3e674d5b4a94a260eba49cf15, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -83,6 +83,7 @@ namespace Autohand{
                     if(lastEditorGrabbable != null){
                         Remove(lastEditorGrabbable);
                         lastEditorGrabbable.transform.position = preEditorPos;
+                        
                     }
 
                     preEditorPos = editorGrabbable.transform.position;
@@ -144,6 +145,7 @@ namespace Autohand{
                 placeObj.body.isKinematic = false;
             placeObj.transform.parent = originParent;
             OnRemove?.Invoke();
+            
             occupied = false;
             placedObject = null;
         }

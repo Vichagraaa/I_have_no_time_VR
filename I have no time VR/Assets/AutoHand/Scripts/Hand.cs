@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Autohand {
     public delegate void HandGrabEvent(Hand hand, Grabbable grabbable);
@@ -13,7 +15,7 @@ namespace Autohand {
 
     [RequireComponent(typeof(Rigidbody))]
     public class Hand : MonoBehaviour {
-
+        private XRController xr;
         [Header("Follow Settings")]
         [Tooltip("Follow target, the hand will always try to match this transforms rotation and position with rigidbody movements")]
         public Transform follow;
@@ -98,6 +100,7 @@ namespace Autohand {
         Vector3 startGrabPos;
         Quaternion startGrabRot;
         bool grabbingFrame = false;
+        
 
         ///Events for all my programmers out there :)
 	    public event HandGrabEvent OnBeforeGrabbed;
@@ -114,8 +117,8 @@ namespace Autohand {
         public event HandGrabEvent OnHighlight;
         public event HandGrabEvent OnStopHighlight;
 
-
         public void Start() {
+            xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
             body = GetComponent<Rigidbody>();
             body.useGravity = false;
             if(body.collisionDetectionMode == CollisionDetectionMode.Discrete)
@@ -144,7 +147,10 @@ namespace Autohand {
             //preretrieve layermask
             handLayers = LayerMask.GetMask("Hand", "HandHolding", "HandReleasing");
         }
-
+        void ActivateHaptic()
+        {
+            xr.SendHapticImpulse(0.5f, 1f);
+        }
         public void Update() {
             if(grabbing || body.isKinematic)
                 return;
@@ -310,6 +316,7 @@ namespace Autohand {
                 RaycastHit closestHit;
                 if(HandClosestHit(out closestHit, reachDistance, LayerMask.GetMask("Grabbable", "Grabbing", "Holding", "Releasing")) != Vector3.zero)
                     StartCoroutine(GrabObject(closestHit));
+                    ActivateHaptic();
             }
             else if(holdingObj != null) {
                 if(holdingObj.GetComponent<GrabLock>()) {

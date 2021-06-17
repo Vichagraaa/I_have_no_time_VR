@@ -11,9 +11,11 @@ namespace Autohand {
         {
             Grande,
             Mediano,
-            Chico
+            Chico,
+            Especial
         }
         public TamanoOjeto tamanoObjeto;
+        public MenuActivarPrueba gamemanager;
         public int iraPoints = 0;
         public bool sumeIra = false;
        
@@ -124,6 +126,11 @@ namespace Autohand {
             {
                 iraPoints = 1;
             }
+
+            if(tamanoObjeto==TamanoOjeto.Especial)
+            {
+                iraPoints = 0;
+            }
         }
 
         /// <summary>Virtual substitute for Awake()</summary>
@@ -205,6 +212,16 @@ namespace Autohand {
         /// <summary>Called by the hand whenever this item is grabbed</summary>
         public virtual void OnGrab(Hand hand) {
 
+            
+
+
+            if (sumeIra == false)
+            {
+                gamemanager.addIraPoints(iraPoints);
+                sumeIra = true;
+
+            }
+
 
             if (lockHandOnGrab)
                 hand.GetComponent<Rigidbody>().isKinematic = true;
@@ -222,14 +239,7 @@ namespace Autohand {
 
             OnGrabEvent?.Invoke(hand, this);
 
-               
 
-            if (sumeIra == false)
-            {
-
-               
-                sumeIra = true;
-            }
         }
 
 

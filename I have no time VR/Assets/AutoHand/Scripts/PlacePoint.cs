@@ -133,6 +133,7 @@ namespace Autohand{
                 joint.massScale = 1;
                 joint.enableCollision = false;
                 joint.enablePreprocessing = false;
+               
             }
 
             occupied = true;

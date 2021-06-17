@@ -122,7 +122,7 @@ public class MenuActivarPrueba : MonoBehaviour
             }
         }
 
-        if (countIra == limitIra)
+        if (countIra >= limitIra)
         {
             full = true;
             showPostProcessing();
@@ -142,7 +142,7 @@ public class MenuActivarPrueba : MonoBehaviour
             StopCoroutine(TakeDown());
             restando = false;
             hidePostProcessing();
-            
+            normalizeMusic();
         }
 
         bool tempState = false;

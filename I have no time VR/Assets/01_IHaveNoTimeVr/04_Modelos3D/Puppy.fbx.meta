@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: b374dfde33eb15045bd86d0cc74e1df3
+guid: 94d10561853dffa4d9dc99e4e907ca93
 ModelImporter:
   serializedVersion: 20101
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -1422011007694221501
+    second: Armature|ArmatureAction.001
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -12,8 +15,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Mat_Vaso
-    second: {fileID: 2100000, guid: 394eabebadc9af9448e051826fb9e60b, type: 2}
+      name: Mat_Puppy_collar
+    second: {fileID: 2100000, guid: 6bfce35ab2adb444a83802f8e29fe29c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Puppy_cuerpo
+    second: {fileID: 2100000, guid: 947038f65674e304b8de8ce7aa2a8e5a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Puppy_nariz
+    second: {fileID: 2100000, guid: e9bbb47483a643f4ab934232aa11cc31, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

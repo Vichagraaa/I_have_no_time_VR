@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Mat_Outline
     second: {fileID: 2100000, guid: 2d911e4640f02b845b705ad9614bc3a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat_Vaso
+    second: {fileID: 2100000, guid: 394eabebadc9af9448e051826fb9e60b, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

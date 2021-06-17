@@ -85,6 +85,7 @@ public class MenuActivarPrueba : MonoBehaviour
         levelMusic.GetComponent<AudioSource>().pitch = pitchMusic;
         countIra = 0;
         nIra.GetComponent<Text>().text = "" + countIra;
+        
     }
 
     // Update is called once per frame
@@ -121,6 +122,7 @@ public class MenuActivarPrueba : MonoBehaviour
                 gameFinish = true;
             }
         }
+       
 
         if (countIra >= limitIra)
         {

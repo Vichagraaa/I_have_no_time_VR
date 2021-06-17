@@ -14,6 +14,8 @@ namespace Autohand {
             Chico,
             Especial
         }
+        public bool masa;
+        private Rigidbody rb;
         public TamanoOjeto tamanoObjeto;
         public MenuActivarPrueba gamemanager;
         public int iraPoints = 0;
@@ -112,24 +114,31 @@ namespace Autohand {
 
         void Start()
         {
+            rb = GetComponent<Rigidbody>();
+            
+            
             if (tamanoObjeto == TamanoOjeto.Grande)
             {
                 iraPoints = 3;
+                rb.mass =  1000;
             }
 
             if (tamanoObjeto == TamanoOjeto.Mediano)
             {
                 iraPoints = 2;
+                rb.mass = 60;
             }
 
             if (tamanoObjeto == TamanoOjeto.Chico)
             {
                 iraPoints = 1;
+                rb.mass = 1;
             }
 
             if(tamanoObjeto==TamanoOjeto.Especial)
             {
                 iraPoints = 0;
+                rb.mass = 1;
             }
         }
 
@@ -158,7 +167,38 @@ namespace Autohand {
                 lastCenterOfMassRot = body.transform.rotation;
                 lastCenterOfMassPos = body.transform.position;
             }
+            
         }
+        public void Update()
+        {
+           
+            if(gamemanager.restando==true)
+            {
+              if(tamanoObjeto == TamanoOjeto.Grande)
+                {
+                    rb.mass = 1;
+                }
+              if(tamanoObjeto == TamanoOjeto.Mediano)
+                {
+                    rb.mass = 1;
+                }
+             
+
+            }
+            else
+            {
+                if (tamanoObjeto == TamanoOjeto.Grande)
+                {
+                    rb.mass = 1000;
+                }
+                if (tamanoObjeto == TamanoOjeto.Mediano)
+                {
+                    rb.mass = 60;
+                }
+            }
+            
+        }
+
 
         /// <summary>Called when the hand starts aiming at this item for pickup</summary>
         public virtual void Highlight() {

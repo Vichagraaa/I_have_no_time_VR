@@ -138,6 +138,7 @@ GameObject:
   - component: {fileID: 90018869}
   - component: {fileID: 90018868}
   - component: {fileID: 90018867}
+  - component: {fileID: 90018874}
   m_Layer: 0
   m_Name: Cube.070 (5)
   m_TagString: Caja
@@ -185,7 +186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanoObjeto: 0
+  masa: 0
+  tamanoObjeto: 2
   gamemanager: {fileID: 8301366322897917456}
   iraPoints: 0
   sumeIra: 0
@@ -300,6 +302,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -81.93, y: 99.946, z: -164.75}
+--- !u!114 &90018874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90018866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  part: 0
 --- !u!1 &137296898 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1815447913508213401, guid: af906fb9f01df054cb4e2f5e9f33f50e, type: 3}
@@ -467,6 +483,7 @@ GameObject:
   - component: {fileID: 403974354}
   - component: {fileID: 403974353}
   - component: {fileID: 403974352}
+  - component: {fileID: 403974359}
   m_Layer: 0
   m_Name: Cube.070 (7)
   m_TagString: Caja
@@ -514,6 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
   tamanoObjeto: 0
   gamemanager: {fileID: 8301366322897917456}
   iraPoints: 0
@@ -629,6 +647,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -81.93, y: 99.946, z: -164.75}
+--- !u!114 &403974359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403974351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  part: 0
 --- !u!850595691 &459880989
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -1840,6 +1872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
   tamanoObjeto: 0
   gamemanager: {fileID: 0}
   iraPoints: 0
@@ -2825,6 +2858,7 @@ GameObject:
   - component: {fileID: 1689510828}
   - component: {fileID: 1689510827}
   - component: {fileID: 1689510826}
+  - component: {fileID: 1689510833}
   m_Layer: 0
   m_Name: Cube.070 (6)
   m_TagString: Caja
@@ -2872,7 +2906,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tamanoObjeto: 0
+  masa: 0
+  tamanoObjeto: 1
   gamemanager: {fileID: 8301366322897917456}
   iraPoints: 0
   sumeIra: 0
@@ -2987,6 +3022,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -81.93, y: 99.946, z: -164.75}
+--- !u!114 &1689510833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689510825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  part: 0
 --- !u!1 &1767564452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3188,7 +3237,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-39652
+  m_Name: pb_Mesh-1390
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3801,6 +3850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
   tamanoObjeto: 2
   gamemanager: {fileID: 8301366322897917456}
   iraPoints: 0

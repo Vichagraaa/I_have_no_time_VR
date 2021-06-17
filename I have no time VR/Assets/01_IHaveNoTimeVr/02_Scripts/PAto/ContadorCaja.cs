@@ -34,7 +34,15 @@ public class ContadorCaja : MonoBehaviour
             win.gameObject.SetActive(true);
         }
     }
+    private void OnTriggerExit(Collider caja)
+    {
+        if (caja.CompareTag("Caja"))
+        {
+            contador = contador - 1;
+            actualizar();
 
+        }
+    }
     private void actualizar()
     {
         objetos.text = "Objeto:" + contador + " / " + objetosTotal;

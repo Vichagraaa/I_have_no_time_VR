@@ -13,6 +13,8 @@ namespace Autohand {
             Mediano,
             Chico
         }
+        public float masa;
+        private Rigidbody rb;
         public TamanoOjeto tamanoObjeto;
         public int iraPoints = 0;
         public bool sumeIra = false;
@@ -109,24 +111,35 @@ namespace Autohand {
 
         void Start()
         {
+
+            rb = GetComponent<Rigidbody>();
+            rb.mass = masa;
+            GameManager restando = GetComponent<GameManager>();
+
+
             if (tamanoObjeto == TamanoOjeto.Grande)
             {
                 iraPoints = 3;
+                masa = 3;
             }
 
             if (tamanoObjeto == TamanoOjeto.Mediano)
             {
                 iraPoints = 2;
+                masa = 2;
             }
 
             if (tamanoObjeto == TamanoOjeto.Chico)
             {
                 iraPoints = 1;
+                masa = 1;
             }
         }
 
         /// <summary>Virtual substitute for Awake()</summary>
         public virtual void OnAwake() {
+
+
             if(heldBy == null)
                 heldBy = new List<Hand>();
 
@@ -149,6 +162,41 @@ namespace Autohand {
             if(beingHeld) {
                 lastCenterOfMassRot = body.transform.rotation;
                 lastCenterOfMassPos = body.transform.position;
+            }
+            GameManager restando = GetComponent<GameManager>();
+            if (restando == true) 
+            {
+                if (tamanoObjeto == TamanoOjeto.Grande)
+                {
+                    masa = 1.5f;
+                }
+
+                if (tamanoObjeto == TamanoOjeto.Mediano)
+                {
+                    masa = 0.8f;
+                }
+
+                if (tamanoObjeto == TamanoOjeto.Chico)
+                {
+                    masa = 0.2f;
+                }
+            }
+            else
+            {
+                if (tamanoObjeto == TamanoOjeto.Grande)
+                {
+                    masa = 3;
+                }
+
+                if (tamanoObjeto == TamanoOjeto.Mediano)
+                {
+                    masa = 2;
+                }
+
+                if (tamanoObjeto == TamanoOjeto.Chico)
+                {
+                    masa = 1;
+                }
             }
         }
 
@@ -206,7 +254,7 @@ namespace Autohand {
 
             if (sumeIra == false)
             {
-                GameManager gamemanager = hand.GetComponent<GameManager>();
+                GameManager gamemanager = GetComponent<GameManager>();
                 gamemanager.addIraPoints(iraPoints);
                 sumeIra = true;
             }

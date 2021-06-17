@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Autohand {
     public class Grabbable : MonoBehaviour {
@@ -20,7 +22,8 @@ namespace Autohand {
         public MenuActivarPrueba gamemanager;
         public int iraPoints = 0;
         public bool sumeIra = false;
-       
+        private XRController xr;
+
 
         [Header("Holding Settings")]
         [Tooltip("The physics body to connect this colliders grab to - if left empty will default to local body")]
@@ -115,12 +118,14 @@ namespace Autohand {
         void Start()
         {
             rb = GetComponent<Rigidbody>();
-            
-            
+            xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
+
+
             if (tamanoObjeto == TamanoOjeto.Grande)
             {
                 iraPoints = 3;
                 rb.mass =  1000;
+                
             }
 
             if (tamanoObjeto == TamanoOjeto.Mediano)
@@ -140,6 +145,11 @@ namespace Autohand {
                 iraPoints = 0;
                 rb.mass = 1;
             }
+        }
+
+        void ActivateHaptic()
+        {
+            xr.SendHapticImpulse(0.5f, 1f);
         }
 
         /// <summary>Virtual substitute for Awake()</summary>
@@ -262,6 +272,10 @@ namespace Autohand {
 
             }
 
+                if(tamanoObjeto==TamanoOjeto.Grande)
+                {
+                    ActivateHaptic();
+                }
 
             if (lockHandOnGrab)
                 hand.GetComponent<Rigidbody>().isKinematic = true;

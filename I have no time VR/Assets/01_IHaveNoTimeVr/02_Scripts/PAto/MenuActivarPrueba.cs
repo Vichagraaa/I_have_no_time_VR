@@ -122,6 +122,10 @@ public class MenuActivarPrueba : MonoBehaviour
                 gameFinish = true;
             }
         }
+        if(Time.timeScale==0)
+        {
+            slowMusic();
+        }
        
 
         if (countIra >= limitIra)
@@ -182,14 +186,14 @@ public class MenuActivarPrueba : MonoBehaviour
     void pausa()
     {
         slowMusic();
-
+        Time.timeScale = 0;
         menu.SetActive(true);
         activar = true;
     }
     void quitarPausa()
     {
         normalizeMusic();
-        
+        Time.timeScale = 1;
         menu.SetActive(false);
         activar = false;
     }
@@ -210,13 +214,15 @@ public class MenuActivarPrueba : MonoBehaviour
     void accelerateMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 2, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+
     }
 
     void slowMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+       
     }
-
+   
     void normalizeMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 1, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);

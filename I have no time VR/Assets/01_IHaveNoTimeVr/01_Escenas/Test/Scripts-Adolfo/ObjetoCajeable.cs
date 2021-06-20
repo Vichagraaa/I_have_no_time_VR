@@ -7,7 +7,6 @@ public class ObjetoCajeable : MonoBehaviour
 {
     // Objeto instanciable, la cajita.
     public GameObject cajita;
-    public GameObject particula;
     // Tamaño que tendrá el objeto instanciado, la base es 100,
     // por lo que tiene que ser mayor a 100.
     public float tamano;
@@ -49,7 +48,6 @@ public class ObjetoCajeable : MonoBehaviour
         cajita.transform.localScale = new Vector3(tamano, tamano, tamano);
         // Instancia finalmente la caja.
         Instantiate(cajita, transform.position, transform.rotation);
-        Instantiate(particula, transform.position, transform.rotation);
         Destroy(gameObject); // Destruye el objeto pasados 3 segundos.
     }
 

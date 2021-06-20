@@ -2492,7 +2492,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1364441418984419110}
   finalCanvas: {fileID: 1364441418984419110}
   nIra: {fileID: 0}
-  countIra: 51
+  countIra: 3
   limitIra: 10
   restando: 0
   full: 0

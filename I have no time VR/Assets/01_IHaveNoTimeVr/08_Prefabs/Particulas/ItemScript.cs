@@ -27,6 +27,7 @@ public class ItemScript : MonoBehaviour
             Instantiate(prefab, contactPoint.point, transform.rotation);
             StartCoroutine("Particula");
         }
+        
     }
   
     IEnumerator Particula()

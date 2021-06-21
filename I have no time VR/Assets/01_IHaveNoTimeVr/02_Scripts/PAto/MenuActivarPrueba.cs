@@ -248,8 +248,20 @@ public class MenuActivarPrueba : MonoBehaviour
         takingAway = true;
         yield return new WaitForSeconds(1);
         levelDuration--;
-        contadorNivel.GetComponent<Text>().text = "0"+minutos+ ":" + levelDuration;
-        if (levelDuration<=9)
+        
+        if(minutos>=10)
+        {
+            contadorNivel.GetComponent<Text>().text = minutos + ":" + levelDuration;
+        }
+        if (minutos >= 10 && levelDuration<=9)
+        {
+            contadorNivel.GetComponent<Text>().text = minutos + ":0" + levelDuration;
+        }
+        if(minutos<=9)
+        {
+            contadorNivel.GetComponent<Text>().text = "0" + minutos + ":" + levelDuration;
+        }
+        if (minutos<=9 &&levelDuration<=9)
         {
             contadorNivel.GetComponent<Text>().text = "0" + minutos + ":0" + levelDuration;
         }

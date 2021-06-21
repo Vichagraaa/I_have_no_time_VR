@@ -47,6 +47,8 @@ public class MenuActivarPrueba : MonoBehaviour
     public int pitchMusic = 1;
     public int rapidMusic;
     public float accelerationMusic = 1.0f;
+    public AudioSource Alarma;
+    public AudioSource PausaM;
 
 
     //Menu de pausa;
@@ -112,6 +114,7 @@ public class MenuActivarPrueba : MonoBehaviour
             if (levelDuration<=0 && minutos>0)
             {
                 minutos--;
+                Alarma.Play();
                 levelDuration = 60;
 
             }
@@ -124,7 +127,7 @@ public class MenuActivarPrueba : MonoBehaviour
         }
         if(Time.timeScale==0)
         {
-            slowMusic();
+            PausaM.Play();
         }
        
 
@@ -189,9 +192,11 @@ public class MenuActivarPrueba : MonoBehaviour
         Time.timeScale = 0;
         menu.SetActive(true);
         activar = true;
+        
     }
     void quitarPausa()
     {
+       
         normalizeMusic();
         Time.timeScale = 1;
         menu.SetActive(false);
@@ -219,7 +224,8 @@ public class MenuActivarPrueba : MonoBehaviour
 
     void slowMusic()
     {
-        DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+        
        
     }
    

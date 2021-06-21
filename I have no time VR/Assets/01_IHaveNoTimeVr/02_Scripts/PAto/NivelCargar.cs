@@ -13,4 +13,9 @@ public class NivelCargar : MonoBehaviour
             Time.timeScale = 1;
         }
     }
+
+    public void salir()
+    {
+        Application.Quit();
+    }
 }

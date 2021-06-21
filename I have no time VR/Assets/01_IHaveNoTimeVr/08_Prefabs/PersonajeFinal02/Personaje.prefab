@@ -262,6 +262,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+      propertyPath: countIra
+      value: 73
+      objectReference: {fileID: 0}
+    - target: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
       propertyPath: levelMusic
       value: 
       objectReference: {fileID: 0}

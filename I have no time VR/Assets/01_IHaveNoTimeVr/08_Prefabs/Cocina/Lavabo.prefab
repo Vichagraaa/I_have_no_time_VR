@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 8086996381276345183}
   - component: {fileID: 8351277867266046217}
   - component: {fileID: 911745975810000002}
-  - component: {fileID: 896471384633491054}
+  - component: {fileID: 181426583585729602}
   m_Layer: 0
   m_Name: puerta_lavabo_02
   m_TagString: Untagged
@@ -262,38 +262,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0036032877, y: 0.0011498965, z: 0.0004552818}
   m_Center: {x: 0.0058423234, y: -0.0009999973, z: 0.012189473}
---- !u!59 &896471384633491054
-HingeJoint:
+--- !u!138 &181426583585729602
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805099147619171915}
-  m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.0002000024, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -6.98569, y: 0.21187276, z: 0.7868743}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: 0
-    max: 90
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
+  m_ConnectedBody: {fileID: 5375921714287899712}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
@@ -487,7 +466,7 @@ GameObject:
   - component: {fileID: 6186780671662734752}
   - component: {fileID: 1181851266648115966}
   - component: {fileID: 1610326359765282972}
-  - component: {fileID: 9008575473974921922}
+  - component: {fileID: 85249929722608341}
   m_Layer: 0
   m_Name: puerta_lavabo_01
   m_TagString: Untagged
@@ -602,38 +581,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0036265969, y: 0.0011498965, z: 0.00045528062}
   m_Center: {x: -0.006156955, y: -0.0009999973, z: 0.012189439}
---- !u!59 &9008575473974921922
-HingeJoint:
+--- !u!138 &85249929722608341
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4913448436596545684}
-  m_ConnectedBody: {fileID: 0}
-  m_Anchor: {x: 0, y: 0.0002000024, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -4.604769, y: 0.211873, z: 0.8068745}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: -180
-    max: -90
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
+  m_ConnectedBody: {fileID: 5375921714287899712}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
-  m_EnableCollision: 1
+  m_EnableCollision: 0
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
@@ -655,7 +613,7 @@ GameObject:
   - component: {fileID: 1556785012596249891}
   m_Layer: 0
   m_Name: ' GameObject'
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -826,6 +784,9 @@ GameObject:
   - component: {fileID: 1008006970076082754}
   - component: {fileID: 8979415310235968522}
   - component: {fileID: 2217228697687592473}
+  - component: {fileID: -9199047877765400733}
+  - component: {fileID: -7524719846364187980}
+  - component: {fileID: 7988576105532049152}
   m_Layer: 0
   m_Name: Lavabo
   m_TagString: Untagged
@@ -982,6 +943,82 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0006545925, y: 0.015426488, z: 0.014822714}
   m_Center: {x: 0.01234185, y: -0.0010802394, z: -0.0022372687}
+--- !u!114 &-9199047877765400733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104418083100203098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 1
+  gamemanager: {fileID: 3011742682222960611, guid: 9261760d85ae4ca45aa99e6e01f3561b, type: 3}
+  iraPoints: 0
+  sumeIra: 0
+  body: {fileID: 0}
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  handType: 0
+  singleHandOnly: 0
+  parentOnGrab: 1
+  releaseOnTeleport: 0
+  lockHandOnGrab: 0
+  hightlightMaterial: {fileID: 0}
+  throwMultiplyer: 1
+  pullApartBreakOnly: 1
+  makeChildrenGrabbable: 1
+  jointBreakForce: 1200
+  jointBreakTorque: 1200
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  hideEvents: 0
+--- !u!114 &-7524719846364187980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104418083100203098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: 542871c8b38dcff4ca85a7d6ad88b323, type: 3}
+  part: 0
+--- !u!114 &7988576105532049152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104418083100203098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e07d5c0e85c4dc469e6612859516871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
+  particula: {fileID: 7417692256413052700, guid: b87a6bc516cc4e042ab6c07e3e6ddc6f, type: 3}
+  tamano: 60
 --- !u!1 &7808434416575139314
 GameObject:
   m_ObjectHideFlags: 0

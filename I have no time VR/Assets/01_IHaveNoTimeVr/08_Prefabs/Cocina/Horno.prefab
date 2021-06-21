@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 2487738982750708105}
   - component: {fileID: 4349059197030745131}
   - component: {fileID: 3564551118780844245}
+  - component: {fileID: 4411407979405655282}
   m_Layer: 0
   m_Name: puerta_horno
   m_TagString: Untagged
@@ -329,3 +330,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020230941, y: 0.0011459196, z: 0.0012872365}
   m_Center: {x: -0.01, y: -0.0029474965, z: 0.012665479}
+--- !u!59 &4411407979405655282
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7031110010384074126}
+  m_ConnectedBody: {fileID: 2562427790192481816}
+  m_Anchor: {x: 0, y: -0.00012313295, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.01, y: -0.0068740877, z: -0.0030588608}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 90
+    max: 180
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1

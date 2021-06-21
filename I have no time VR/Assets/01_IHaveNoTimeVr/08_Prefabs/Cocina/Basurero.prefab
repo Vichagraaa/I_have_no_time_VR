@@ -70,6 +70,7 @@ GameObject:
   - component: {fileID: 4388302042013737955}
   - component: {fileID: 163545048110064932}
   - component: {fileID: 3760977319952193504}
+  - component: {fileID: 6565201989653779387}
   - component: {fileID: 7265555484856470213}
   - component: {fileID: 332429986177842545}
   - component: {fileID: 7008599529180886572}
@@ -166,6 +167,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!59 &6565201989653779387
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116133079931059564}
+  m_ConnectedBody: {fileID: 953365645691256727}
+  m_Anchor: {x: 0, y: 0.00014141435, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 7.1173367e-10, y: 0.0029330193, z: 0.008141283}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -90
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!65 &7265555484856470213
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -799,6 +835,7 @@ GameObject:
   - component: {fileID: 4513396784045053532}
   - component: {fileID: 8502626563245427881}
   - component: {fileID: 7526567878447197051}
+  - component: {fileID: 3291834639997277575}
   m_Layer: 0
   m_Name: Pedal_basurero
   m_TagString: Untagged
@@ -900,6 +937,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!59 &3291834639997277575
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5837400115281168105}
+  m_ConnectedBody: {fileID: 953365645691256727}
+  m_Anchor: {x: 0, y: 0.00021248567, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -6.6081746e-10, y: -0.0034868605, z: -0.0075588687}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 30
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &6331361547411971847
 GameObject:
   m_ObjectHideFlags: 0

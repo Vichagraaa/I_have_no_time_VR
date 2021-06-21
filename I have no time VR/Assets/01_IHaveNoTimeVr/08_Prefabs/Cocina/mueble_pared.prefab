@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 4840697451962850968}
   - component: {fileID: 4189813353931105648}
   - component: {fileID: 5534846653314376257}
+  - component: {fileID: 80687782647146358}
   m_Layer: 0
   m_Name: mueble_g_puerta_03.001
   m_TagString: Untagged
@@ -314,6 +315,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00046558617, y: 0.00082989584, z: 0.0029449232}
   m_Center: {x: -0.0100555, y: -0.00077789306, z: 0.0025556223}
+--- !u!59 &80687782647146358
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3454595003949609906}
+  m_ConnectedBody: {fileID: 1926996799075840010}
+  m_Anchor: {x: 0, y: 0.00020001654, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.018147383, y: -0.008249728, z: -0.008195698}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -90
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &7413125733539719515
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +364,7 @@ GameObject:
   - component: {fileID: 1894620947987482493}
   - component: {fileID: 242641162841331492}
   - component: {fileID: 8425936819293853289}
+  - component: {fileID: 8609915440861753955}
   m_Layer: 0
   m_Name: mueble_g_puerta_01.001
   m_TagString: Untagged
@@ -442,6 +479,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00046558617, y: 0.00082989584, z: 0.0029064314}
   m_Center: {x: 0.010055495, y: -0.0007778935, z: 0.0026127184}
+--- !u!59 &8609915440861753955
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413125733539719515}
+  m_ConnectedBody: {fileID: 1926996799075840010}
+  m_Anchor: {x: 0, y: 0.00020001666, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.01859398, y: -0.008249728, z: -0.008195693}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 90
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &9200564538938062679
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,6 +528,7 @@ GameObject:
   - component: {fileID: 2691387830973313437}
   - component: {fileID: 7787107118657135289}
   - component: {fileID: 1536234604397142164}
+  - component: {fileID: 3172884376294923379}
   m_Layer: 0
   m_Name: mueble_g_puerta_02.001
   m_TagString: Untagged
@@ -570,3 +643,38 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00046558617, y: 0.00082989584, z: 0.0029449232}
   m_Center: {x: 0.010055495, y: -0.00077789306, z: 0.0025556223}
+--- !u!59 &3172884376294923379
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200564538938062679}
+  m_ConnectedBody: {fileID: 1926996799075840010}
+  m_Anchor: {x: 0, y: 0.00020001666, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.005861827, y: -0.008249728, z: -0.008195694}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 90
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1

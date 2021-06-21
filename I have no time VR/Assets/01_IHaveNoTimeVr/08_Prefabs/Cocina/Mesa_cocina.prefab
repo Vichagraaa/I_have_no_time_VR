@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1804635305921667253}
   - component: {fileID: 6873884273384194277}
   - component: {fileID: 372919977505602534}
+  - component: {fileID: 4300337932965965843}
   m_Layer: 0
   m_Name: puerta_cocina_01
   m_TagString: Untagged
@@ -128,6 +129,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0036269985, y: 0.0012313079, z: 0.0005036343}
   m_Center: {x: -0.0061360113, y: -0.0009505014, z: 0.015851608}
+--- !u!59 &4300337932965965843
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354189376438144296}
+  m_ConnectedBody: {fileID: 7457346101555487352}
+  m_Anchor: {x: 0, y: 0.0002000024, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.012069651, y: -0.008596947, z: -0.00928559}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -90
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &6445241081264245057
 GameObject:
   m_ObjectHideFlags: 0
@@ -328,6 +364,7 @@ GameObject:
   - component: {fileID: 2074101451529927059}
   - component: {fileID: 1502828912526165657}
   - component: {fileID: 6403208822906102358}
+  - component: {fileID: 5406472417607658031}
   m_Layer: 0
   m_Name: puerta_cocina_02
   m_TagString: Untagged
@@ -442,3 +479,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!59 &5406472417607658031
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7330566976536595075}
+  m_ConnectedBody: {fileID: 7457346101555487352}
+  m_Anchor: {x: 0, y: 0.0002000024, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -0.011939557, y: -0.008596947, z: -0.00928559}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: 0
+    max: 90
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1

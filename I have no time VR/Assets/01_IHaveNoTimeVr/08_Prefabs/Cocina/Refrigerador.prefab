@@ -201,6 +201,7 @@ GameObject:
   - component: {fileID: 6084458790054376344}
   - component: {fileID: 5795267796874698349}
   - component: {fileID: 7100898869103823110}
+  - component: {fileID: 2332382859089780950}
   m_Layer: 0
   m_Name: refrigerador_puerta_02
   m_TagString: Untagged
@@ -303,6 +304,41 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8104129833655861747, guid: 3939330e48ed6bc48a0776f84fe77511, type: 3}
+--- !u!59 &2332382859089780950
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2561754000218145021}
+  m_ConnectedBody: {fileID: 4189936588186181087}
+  m_Anchor: {x: 0, y: 0.00007088948, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.013978171, y: -0.006205213, z: -0.030278586}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -90
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &3064639646543584074
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +691,7 @@ GameObject:
   - component: {fileID: 4788213544153480174}
   - component: {fileID: 5073103136254082476}
   - component: {fileID: 5178196430385154917}
+  - component: {fileID: 5687883095462030680}
   m_Layer: 0
   m_Name: refrigerador_puerta_01
   m_TagString: Untagged
@@ -757,3 +794,38 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -6332966472601066590, guid: 3939330e48ed6bc48a0776f84fe77511, type: 3}
+--- !u!59 &5687883095462030680
+HingeJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8504243784489716996}
+  m_ConnectedBody: {fileID: 4189936588186181087}
+  m_Anchor: {x: 0, y: 0.00007088948, z: 0}
+  m_Axis: {x: 0, y: 0, z: 1}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0.013978171, y: -0.006205213, z: -0.030278586}
+  m_UseSpring: 0
+  m_Spring:
+    spring: 0
+    damper: 0
+    targetPosition: 0
+  m_UseMotor: 0
+  m_Motor:
+    targetVelocity: 0
+    force: 0
+    freeSpin: 0
+  m_UseLimits: 1
+  m_Limits:
+    min: -90
+    max: 0
+    bounciness: 0
+    bounceMinVelocity: 0.2
+    contactDistance: 0
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1

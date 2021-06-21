@@ -2489,6 +2489,7 @@ MonoBehaviour:
   pitchMusic: 1
   rapidMusic: 0
   accelerationMusic: 1
+  Alarma: {fileID: 0}
   pauseMenu: {fileID: 1364441418984419110}
   finalCanvas: {fileID: 1364441418984419110}
   nIra: {fileID: 0}

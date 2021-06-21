@@ -48,7 +48,7 @@ public class MenuActivarPrueba : MonoBehaviour
     public int rapidMusic;
     public float accelerationMusic = 1.0f;
     public AudioSource Alarma;
-    public AudioSource PausaM;
+  
 
 
     //Menu de pausa;
@@ -127,7 +127,7 @@ public class MenuActivarPrueba : MonoBehaviour
         }
         if(Time.timeScale==0)
         {
-            PausaM.Play();
+            slowMusic();
         }
        
 
@@ -287,7 +287,7 @@ public class MenuActivarPrueba : MonoBehaviour
         restando = true;
         yield return new WaitForSeconds(1);
         countIra--;
-        nIra.GetComponent<Text>().text = "" + countIra;
+        
         restando = false;
     }
 

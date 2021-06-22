@@ -139,6 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 8077338933177100039}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -345,6 +350,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 54683384092473866}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -551,6 +561,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 2017354797690374853}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -757,6 +772,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4891285626184432584}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -963,6 +983,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 872820576355620819}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -1169,6 +1194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3017799529788396138}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -1375,6 +1405,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 8411978047180321647}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -1581,6 +1616,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 971483564825370660}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -1787,6 +1827,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 5449814373995169829}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -1993,6 +2038,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 1703999928727352542}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -2199,6 +2249,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 650598749910665495}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -2405,6 +2460,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 5078231163859983011}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -2611,6 +2671,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 94978674153222170}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -2817,6 +2882,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 2985311135641874526}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -3023,6 +3093,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 8804630830459622858}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -3229,6 +3304,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 985968685679856456}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -3435,6 +3515,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4519875579748429678}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -3641,6 +3726,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 5246790402480599994}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -3847,6 +3937,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 6738621264935197501}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -4053,6 +4148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 6590314332362749422}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -4259,6 +4359,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 5475113631410600631}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -4465,6 +4570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4499217088106726504}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -4671,6 +4781,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 2202795757482145645}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -4877,6 +4992,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 0}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -5083,6 +5203,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 8890619038244463856}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -5289,6 +5414,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4036794141921180711}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -5495,6 +5625,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 201170446773768734}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -5701,6 +5836,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3446991096094930090}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -5907,6 +6047,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 8294760608835033731}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -6113,6 +6258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3604401274529920590}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -6319,6 +6469,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 6979035562670857507}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -6525,6 +6680,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4976163873651367353}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -6731,6 +6891,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 2768803860055867024}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -6937,6 +7102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3702737648974361771}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -7143,6 +7313,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4007254895294259476}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -7349,6 +7524,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 6212247983497018072}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -7555,6 +7735,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 0}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -7761,6 +7946,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3993506933102369481}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -7967,6 +8157,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 7966030279466358219}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -8173,6 +8368,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 7487442266364177504}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -8470,6 +8670,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 2876803835591649973}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -8676,6 +8881,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4329357296379367282}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -8882,6 +9092,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 7224773950983673439}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -9088,6 +9303,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 8113802262131441536}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -9294,6 +9514,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 4221431027868886134}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -9500,6 +9725,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3176634065858889263}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -9706,6 +9936,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 5863622656055498473}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -9912,6 +10147,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 0}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -10118,6 +10358,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3043847511824036571}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -10324,6 +10569,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 3360030962230449068}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -10530,6 +10780,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 2701779702037660466}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -10736,6 +10991,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 1885458073349372161}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -10942,6 +11202,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 6818666218589602809}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -11148,6 +11413,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 6786073440273688166}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -11354,6 +11624,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 1663594993441762808}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -11560,6 +11835,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 9017643683545911139}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -11766,6 +12046,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 5991814575873858075}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -11972,6 +12257,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 314665950213079272}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -12178,6 +12468,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 7648698843900472}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -12384,6 +12679,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 7942541655605296412}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}
@@ -12590,6 +12890,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 7051256638993170769, guid: 9c44a5092856b614b9d96baefb80e4cb, type: 3}
+  iraPoints: 0
+  sumeIra: 0
   body: {fileID: 1247504179306745019}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}

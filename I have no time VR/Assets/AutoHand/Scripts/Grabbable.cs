@@ -2,9 +2,29 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 namespace Autohand {
     public class Grabbable : MonoBehaviour {
+
+        //Interaccion Ira
+        public enum TamanoOjeto
+        {
+            Grande,
+            Mediano,
+            Chico,
+            Especial
+        }
+        public bool masa;
+        private Rigidbody rb;
+        public TamanoOjeto tamanoObjeto;
+        public MenuActivarPrueba gamemanager;
+        public int iraPoints = 0;
+        public bool sumeIra = false;
+        private XRController xr;
+
+
         [Header("Holding Settings")]
         [Tooltip("The physics body to connect this colliders grab to - if left empty will default to local body")]
         public Rigidbody body;
@@ -95,6 +115,43 @@ namespace Autohand {
             OnAwake();
         }
 
+        void Start()
+        {
+            rb = GetComponent<Rigidbody>();
+            xr = (XRController)GameObject.FindObjectOfType(typeof(XRController));
+
+
+            if (tamanoObjeto == TamanoOjeto.Grande)
+            {
+                iraPoints = 3;
+                rb.mass =  1000;
+                
+            }
+
+            if (tamanoObjeto == TamanoOjeto.Mediano)
+            {
+                iraPoints = 2;
+                rb.mass = 60;
+            }
+
+            if (tamanoObjeto == TamanoOjeto.Chico)
+            {
+                iraPoints = 1;
+                rb.mass = 1;
+            }
+
+            if(tamanoObjeto==TamanoOjeto.Especial)
+            {
+                iraPoints = 0;
+                rb.mass = 1;
+            }
+        }
+
+        void ActivateHaptic()
+        {
+            xr.SendHapticImpulse(0.5f, 1f);
+        }
+
         /// <summary>Virtual substitute for Awake()</summary>
         public virtual void OnAwake() {
             if(heldBy == null)
@@ -120,7 +177,38 @@ namespace Autohand {
                 lastCenterOfMassRot = body.transform.rotation;
                 lastCenterOfMassPos = body.transform.position;
             }
+            
         }
+        public void Update()
+        {
+           
+            if(gamemanager.restando==true)
+            {
+              if(tamanoObjeto == TamanoOjeto.Grande)
+                {
+                    rb.mass = 1;
+                }
+              if(tamanoObjeto == TamanoOjeto.Mediano)
+                {
+                    rb.mass = 1;
+                }
+             
+
+            }
+            else
+            {
+                if (tamanoObjeto == TamanoOjeto.Grande)
+                {
+                    rb.mass = 1000;
+                }
+                if (tamanoObjeto == TamanoOjeto.Mediano)
+                {
+                    rb.mass = 60;
+                }
+            }
+            
+        }
+
 
         /// <summary>Called when the hand starts aiming at this item for pickup</summary>
         public virtual void Highlight() {
@@ -173,7 +261,23 @@ namespace Autohand {
 
         /// <summary>Called by the hand whenever this item is grabbed</summary>
         public virtual void OnGrab(Hand hand) {
-            if(lockHandOnGrab)
+
+            
+
+
+            if (sumeIra == false)
+            {
+                gamemanager.addIraPoints(iraPoints);
+                sumeIra = true;
+
+            }
+
+                if(tamanoObjeto==TamanoOjeto.Grande)
+                {
+                    ActivateHaptic();
+                }
+
+            if (lockHandOnGrab)
                 hand.GetComponent<Rigidbody>().isKinematic = true;
 
             if(parentOnGrab)
@@ -188,6 +292,8 @@ namespace Autohand {
                 placePoint.Remove(this);
 
             OnGrabEvent?.Invoke(hand, this);
+
+
         }
 
 

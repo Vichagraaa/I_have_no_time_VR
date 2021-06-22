@@ -9,6 +9,7 @@ public class ContadorCaja : MonoBehaviour
     public Text objetos;
     public int objetosTotal;
     public Text win;
+    public GameObject wina;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,8 @@ public class ContadorCaja : MonoBehaviour
         }
         if(contador==objetosTotal)
         {
-            win.gameObject.SetActive(true);
+            wina.gameObject.SetActive(true);
+            Invoke("GanaDoc", 3f);
         }
     }
     private void OnTriggerExit(Collider caja)
@@ -47,11 +49,14 @@ public class ContadorCaja : MonoBehaviour
     {
         objetos.text = "Objeto:" + contador + " / " + objetosTotal;
     }
-
+    void GanaDoc()
+    {
+        Time.timeScale = 0;
+    }
     private void Awake()
     {
         contador = 0;
         actualizar();
-        win.gameObject.SetActive(false);
+        wina.gameObject.SetActive(false);
     }
 }

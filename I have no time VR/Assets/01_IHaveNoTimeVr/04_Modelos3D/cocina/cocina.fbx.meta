@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 3939330e48ed6bc48a0776f84fe77511
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.063
+    second: {fileID: 2100000, guid: e85b61a79a0ed3a40b561aefa92ef2fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.064
+    second: {fileID: 2100000, guid: 8c322932b75ebc747b5df300ce935db0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: base_basura
+    second: {fileID: 2100000, guid: f5606b2a2cd64a94ab6c2cb1f21815f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: horno.001
+    second: {fileID: 2100000, guid: fbdf30d574ed85543a9743dfc89a62cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: horno.002
+    second: {fileID: 2100000, guid: 037216c5c72a4774280ef49f1e40eb08, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: horno_base
+    second: {fileID: 2100000, guid: 9fe94ad81c2fcdc4fbb9d452b79e17f4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: madera_mesa
+    second: {fileID: -3092847324252717431, guid: 3cc40bba46667ff4f99585487337013c, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: manilla_mueble
+    second: {fileID: 2100000, guid: 7733bdf43b867ca458d800a6864102ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: manilla_refri
+    second: {fileID: 2100000, guid: b37190ab59c2c714f836d528fa731575, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: material_mueble
+    second: {fileID: 2100000, guid: 6f37eb88ca8ab3d4f996a62d8c16bebf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_basurero
+    second: {fileID: 2100000, guid: 556c0bf2e0fd2934da7792d1fff24d64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microondas
+    second: {fileID: 2100000, guid: 6ed9cad8af24ea747ae0d9f4f242ec38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microondas.001
+    second: {fileID: 2100000, guid: fe4899016220f4046803019c026c3ffc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: microondas.002
+    second: {fileID: 2100000, guid: 97ff24c2ec4656f4384f08199a75c5af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mueble_mesa
+    second: {fileID: 2100000, guid: cbcda443dd0bf494d9d25b79f1727343, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: netal_utensillo
+    second: {fileID: 2100000, guid: 672dfd6635cb1f04899872bc0d3bce09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: olla
+    second: {fileID: 2100000, guid: 672dfd6635cb1f04899872bc0d3bce09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outline
+    second: {fileID: 2100000, guid: 48582ae3e674d5b4a94a260eba49cf15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p.horno
+    second: {fileID: 2100000, guid: 06652a08a92489c46876bceba11170ef, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p.horno.001
+    second: {fileID: 2100000, guid: e7d59f56ba49094479d0cb772b976570, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p.horno.002
+    second: {fileID: 2100000, guid: 1bb8f7d8eae1e694daac31e3c8e547df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p.microondas
+    second: {fileID: 2100000, guid: d239bc38525867a45a5633cf1f56d71f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p.microondas.001
+    second: {fileID: 2100000, guid: 5794fa10963816a48a40cc7588eeeec1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: p.microondas.002
+    second: {fileID: 2100000, guid: d29ee4de3a644b140ad0f2bf1098a85b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastico_utensillo
+    second: {fileID: 2100000, guid: f858927f428ff6148aa3a0af9d0e8b12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plato
+    second: {fileID: 2100000, guid: bc4d0133acb3419488f12f2193530bdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: puerta_refrigerador
+    second: {fileID: 2100000, guid: 6be2a133baddb7643a63a1c6245faf49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: refrigerador
+    second: {fileID: 2100000, guid: 6be2a133baddb7643a63a1c6245faf49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: rejilla
+    second: {fileID: 2100000, guid: f3b8e732b6df2354388dc1a92df91c6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarten.001
+    second: {fileID: 2100000, guid: 306a0c392ae8ea642a8feda98a2b5e84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarten.002
+    second: {fileID: 2100000, guid: c206f4ee02e4e2b4691bc4a296b7f601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: sarten.003
+    second: {fileID: 2100000, guid: 01327d70091b7ef449fea69c547606fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vaso
+    second: {fileID: 2100000, guid: f73f3c88b3c3ec54cbea5ce1d15c91bf, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -25,17 +25,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD:I have no time VR/Assets/01_IHaveNoTimeVr/01_Escenas/Test/fbx/Caja/CajaFinalP.prefab
-  m_GameObject: {fileID: 8103320906927154568}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 120, y: 120, z: 120}
-=======
   m_GameObject: {fileID: 1035762994593870592}
   m_LocalRotation: {x: -0.7071067, y: -0.000000030908616, z: 0.000000030908623, w: 0.7071068}
   m_LocalPosition: {x: -6.043729, y: 0.4469169, z: -5.000252}
-  m_LocalScale: {x: 100, y: 100, z: 100}
->>>>>>> Pato2:I have no time VR/Assets/01_IHaveNoTimeVr/01_Escenas/Test/fbx/Caja/CajaFinal.prefab
+  m_LocalScale: {x: 50, y: 50, z: 50}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0

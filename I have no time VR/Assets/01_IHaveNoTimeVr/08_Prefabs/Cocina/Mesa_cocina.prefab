@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1804635305921667253}
   - component: {fileID: 6873884273384194277}
   - component: {fileID: 372919977505602534}
-  - component: {fileID: 4300337932965965843}
+  - component: {fileID: 1602114401561511884}
   m_Layer: 0
   m_Name: puerta_cocina_01
   m_TagString: Untagged
@@ -129,35 +129,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.0036269985, y: 0.0012313079, z: 0.0005036343}
   m_Center: {x: -0.0061360113, y: -0.0009505014, z: 0.015851608}
---- !u!59 &4300337932965965843
-HingeJoint:
+--- !u!138 &1602114401561511884
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354189376438144296}
   m_ConnectedBody: {fileID: 7457346101555487352}
-  m_Anchor: {x: 0, y: 0.0002000024, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.012069651, y: -0.008596947, z: -0.00928559}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: 0
-    max: 90
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -182,9 +161,12 @@ GameObject:
   - component: {fileID: 3401250888552466413}
   - component: {fileID: 8371532350655798085}
   - component: {fileID: 5243892827824257204}
+  - component: {fileID: 9078889550283505404}
+  - component: {fileID: 4024631262664995373}
+  - component: {fileID: 4679902671217525693}
   m_Layer: 0
   m_Name: Mesa_cocina
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -350,6 +332,82 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.025486464, y: 0.01548994, z: 0.0021567366}
   m_Center: {x: -0.000023875236, y: -0.0011119659, z: 0.009750333}
+--- !u!114 &9078889550283505404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6445241081264245057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 1
+  gamemanager: {fileID: 3011742682222960611, guid: 9261760d85ae4ca45aa99e6e01f3561b, type: 3}
+  iraPoints: 0
+  sumeIra: 0
+  body: {fileID: 0}
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  handType: 0
+  singleHandOnly: 0
+  parentOnGrab: 1
+  releaseOnTeleport: 0
+  lockHandOnGrab: 0
+  hightlightMaterial: {fileID: 0}
+  throwMultiplyer: 1
+  pullApartBreakOnly: 1
+  makeChildrenGrabbable: 1
+  jointBreakForce: 1200
+  jointBreakTorque: 1200
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  hideEvents: 0
+--- !u!114 &4024631262664995373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6445241081264245057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: 542871c8b38dcff4ca85a7d6ad88b323, type: 3}
+  part: 0
+--- !u!114 &4679902671217525693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6445241081264245057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e07d5c0e85c4dc469e6612859516871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
+  particula: {fileID: 7417692256413052700, guid: b87a6bc516cc4e042ab6c07e3e6ddc6f, type: 3}
+  tamano: 60
 --- !u!1 &7330566976536595075
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +422,7 @@ GameObject:
   - component: {fileID: 2074101451529927059}
   - component: {fileID: 1502828912526165657}
   - component: {fileID: 6403208822906102358}
-  - component: {fileID: 5406472417607658031}
+  - component: {fileID: 6512336284011069921}
   m_Layer: 0
   m_Name: puerta_cocina_02
   m_TagString: Untagged
@@ -479,35 +537,14 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!59 &5406472417607658031
-HingeJoint:
+--- !u!138 &6512336284011069921
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7330566976536595075}
   m_ConnectedBody: {fileID: 7457346101555487352}
-  m_Anchor: {x: 0, y: 0.0002000024, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.011939557, y: -0.008596947, z: -0.00928559}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: -90
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0

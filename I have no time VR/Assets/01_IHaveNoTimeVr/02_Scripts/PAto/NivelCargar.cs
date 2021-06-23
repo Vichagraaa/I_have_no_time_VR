@@ -9,4 +9,9 @@ public class NivelCargar : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void salir()
+    {
+        Application.Quit();
+    }
 }

@@ -47,6 +47,8 @@ public class MenuActivarPrueba : MonoBehaviour
     public int pitchMusic = 1;
     public int rapidMusic;
     public float accelerationMusic = 1.0f;
+    public AudioSource Alarma;
+  
 
 
     //Menu de pausa;
@@ -112,6 +114,7 @@ public class MenuActivarPrueba : MonoBehaviour
             if (levelDuration<=0 && minutos>0)
             {
                 minutos--;
+                Alarma.Play();
                 levelDuration = 60;
 
             }
@@ -121,6 +124,10 @@ public class MenuActivarPrueba : MonoBehaviour
                 finalCanvas.SetActive(true);
                 gameFinish = true;
             }
+        }
+        if(Time.timeScale==0)
+        {
+            slowMusic();
         }
        
 
@@ -182,14 +189,16 @@ public class MenuActivarPrueba : MonoBehaviour
     void pausa()
     {
         slowMusic();
-
+        Time.timeScale = 0;
         menu.SetActive(true);
         activar = true;
+        
     }
     void quitarPausa()
     {
+       
         normalizeMusic();
-        
+        Time.timeScale = 1;
         menu.SetActive(false);
         activar = false;
     }
@@ -210,13 +219,16 @@ public class MenuActivarPrueba : MonoBehaviour
     void accelerateMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 2, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+
     }
 
     void slowMusic()
     {
-        DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
+        
+       
     }
-
+   
     void normalizeMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 1, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
@@ -275,7 +287,7 @@ public class MenuActivarPrueba : MonoBehaviour
         restando = true;
         yield return new WaitForSeconds(1);
         countIra--;
-        nIra.GetComponent<Text>().text = "" + countIra;
+        
         restando = false;
     }
 

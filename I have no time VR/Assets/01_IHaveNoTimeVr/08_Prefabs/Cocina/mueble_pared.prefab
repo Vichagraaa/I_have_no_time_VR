@@ -18,9 +18,12 @@ GameObject:
   - component: {fileID: 2874095636558619449}
   - component: {fileID: 6550852845795852106}
   - component: {fileID: 1830898850849543027}
+  - component: {fileID: -3893303120313689047}
+  - component: {fileID: 2504954103291178954}
+  - component: {fileID: 2894173829725986194}
   m_Layer: 0
   m_Name: mueble_pared
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,6 +189,82 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00041391014, y: 0.015710857, z: 0.01767264}
   m_Center: {x: 0.018481733, y: -0.00077521324, z: 0.000044076445}
+--- !u!114 &-3893303120313689047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813150483209115015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 1
+  gamemanager: {fileID: 3011742682222960611, guid: 9261760d85ae4ca45aa99e6e01f3561b, type: 3}
+  iraPoints: 0
+  sumeIra: 0
+  body: {fileID: 0}
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  handType: 0
+  singleHandOnly: 0
+  parentOnGrab: 1
+  releaseOnTeleport: 0
+  lockHandOnGrab: 0
+  hightlightMaterial: {fileID: 0}
+  throwMultiplyer: 1
+  pullApartBreakOnly: 1
+  makeChildrenGrabbable: 1
+  jointBreakForce: 1200
+  jointBreakTorque: 1200
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  hideEvents: 0
+--- !u!114 &2504954103291178954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813150483209115015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: 542871c8b38dcff4ca85a7d6ad88b323, type: 3}
+  part: 0
+--- !u!114 &2894173829725986194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2813150483209115015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e07d5c0e85c4dc469e6612859516871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
+  particula: {fileID: 7417692256413052700, guid: b87a6bc516cc4e042ab6c07e3e6ddc6f, type: 3}
+  tamano: 0
 --- !u!1 &3454595003949609906
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +279,7 @@ GameObject:
   - component: {fileID: 4840697451962850968}
   - component: {fileID: 4189813353931105648}
   - component: {fileID: 5534846653314376257}
-  - component: {fileID: 80687782647146358}
+  - component: {fileID: 7181614666699564321}
   m_Layer: 0
   m_Name: mueble_g_puerta_03.001
   m_TagString: Untagged
@@ -315,35 +394,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00046558617, y: 0.00082989584, z: 0.0029449232}
   m_Center: {x: -0.0100555, y: -0.00077789306, z: 0.0025556223}
---- !u!59 &80687782647146358
-HingeJoint:
+--- !u!138 &7181614666699564321
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3454595003949609906}
   m_ConnectedBody: {fileID: 1926996799075840010}
-  m_Anchor: {x: 0, y: 0.00020001654, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.018147383, y: -0.008249728, z: -0.008195698}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: 0
-    max: 90
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -364,7 +422,7 @@ GameObject:
   - component: {fileID: 1894620947987482493}
   - component: {fileID: 242641162841331492}
   - component: {fileID: 8425936819293853289}
-  - component: {fileID: 8609915440861753955}
+  - component: {fileID: 8744015831428693679}
   m_Layer: 0
   m_Name: mueble_g_puerta_01.001
   m_TagString: Untagged
@@ -479,35 +537,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00046558617, y: 0.00082989584, z: 0.0029064314}
   m_Center: {x: 0.010055495, y: -0.0007778935, z: 0.0026127184}
---- !u!59 &8609915440861753955
-HingeJoint:
+--- !u!138 &8744015831428693679
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7413125733539719515}
   m_ConnectedBody: {fileID: 1926996799075840010}
-  m_Anchor: {x: 0, y: 0.00020001666, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.01859398, y: -0.008249728, z: -0.008195693}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: -90
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0
@@ -528,7 +565,7 @@ GameObject:
   - component: {fileID: 2691387830973313437}
   - component: {fileID: 7787107118657135289}
   - component: {fileID: 1536234604397142164}
-  - component: {fileID: 3172884376294923379}
+  - component: {fileID: 8599464052259612598}
   m_Layer: 0
   m_Name: mueble_g_puerta_02.001
   m_TagString: Untagged
@@ -643,35 +680,14 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.00046558617, y: 0.00082989584, z: 0.0029449232}
   m_Center: {x: 0.010055495, y: -0.00077789306, z: 0.0025556223}
---- !u!59 &3172884376294923379
-HingeJoint:
+--- !u!138 &8599464052259612598
+FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9200564538938062679}
   m_ConnectedBody: {fileID: 1926996799075840010}
-  m_Anchor: {x: 0, y: 0.00020001666, z: 0}
-  m_Axis: {x: 0, y: 0, z: 1}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.005861827, y: -0.008249728, z: -0.008195694}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_Limits:
-    min: -90
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
   m_EnableCollision: 0

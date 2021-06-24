@@ -10,6 +10,8 @@ TagManager:
   - Hand
   - camion
   - Caja
+  - Cinturon
+  - Mazo
   layers:
   - Default
   - TransparentFX

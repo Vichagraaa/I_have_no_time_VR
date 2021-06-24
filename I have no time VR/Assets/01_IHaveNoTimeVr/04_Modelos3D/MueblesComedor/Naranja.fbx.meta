@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Mat_Naranja
+    second: {fileID: 9003353085549565770, guid: 94e4b94c638bc6b43a940894a03b3364, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mat_Outline
     second: {fileID: 2100000, guid: 48582ae3e674d5b4a94a260eba49cf15, type: 2}
   materials:

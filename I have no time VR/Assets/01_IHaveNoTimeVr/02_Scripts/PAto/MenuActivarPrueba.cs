@@ -44,6 +44,9 @@ public class MenuActivarPrueba : MonoBehaviour
 
     //Musica 
     public AudioSource levelMusic;
+    public AudioSource rageMusic;
+    public int volumeRageMusic;
+    public int volumeMusic;
     public int pitchMusic = 1;
     public int rapidMusic;
     public float accelerationMusic = 1.0f;
@@ -85,6 +88,8 @@ public class MenuActivarPrueba : MonoBehaviour
         contadorNivel.GetComponent<Text>().text = "00:" + levelDuration;
         contadorInicial.GetComponent<Text>().text = "00:" + initialTimerDuration;
         levelMusic.GetComponent<AudioSource>().pitch = pitchMusic;
+        levelMusic.GetComponent<AudioSource>().volume = volumeMusic;
+        rageMusic.GetComponent<AudioSource>().volume = volumeRageMusic;
         countIra = 0;
         nIra.GetComponent<Text>().text = "" + countIra;
         
@@ -207,11 +212,13 @@ public class MenuActivarPrueba : MonoBehaviour
     void showPostProcessing()
     {
         DOTween.To(() => m_volumen.weight, x => m_volumen.weight = x, 1, m_speed).SetDelay(1).SetEase(Ease.Linear);
+        subirVolumenIra();
     }
 
     void hidePostProcessing()
     {
         DOTween.To(() => m_volumen.weight, x => m_volumen.weight = x, 0, m_speed).SetDelay(1).SetEase(Ease.Linear);
+        bajarVolumenIra();
     }
 
 
@@ -219,20 +226,30 @@ public class MenuActivarPrueba : MonoBehaviour
     void accelerateMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 2, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
-
     }
 
     void slowMusic()
     {
-         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
-        
-       
+         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 0.2f, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);   
     }
    
     void normalizeMusic()
     {
         DOTween.To(() => levelMusic.pitch, x => levelMusic.pitch = x, 1, accelerationMusic).SetDelay(1).SetEase(Ease.Linear);
     }
+
+    void subirVolumenIra()
+    {
+        DOTween.To(() => rageMusic.volume, x => rageMusic.volume = x, 1, volumeRageMusic).SetDelay(1).SetEase(Ease.Linear);
+        DOTween.To(() => levelMusic.volume, x => levelMusic.volume = x, 0, volumeMusic).SetDelay(1).SetEase(Ease.Linear);
+    }
+
+    void bajarVolumenIra()
+    {
+        DOTween.To(() => rageMusic.volume, x => rageMusic.volume = x, 0, volumeRageMusic).SetDelay(1).SetEase(Ease.Linear);
+        DOTween.To(() => levelMusic.volume, x => levelMusic.volume = x, 1, volumeMusic).SetDelay(1).SetEase(Ease.Linear);
+    }
+
 
 
     //Void sumar punto de ira 

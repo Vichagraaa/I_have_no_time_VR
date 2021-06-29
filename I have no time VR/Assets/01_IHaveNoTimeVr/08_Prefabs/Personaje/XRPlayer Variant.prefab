@@ -2486,6 +2486,9 @@ MonoBehaviour:
   m_volumen: {fileID: 7050999949937358167}
   m_speed: 2
   levelMusic: {fileID: 0}
+  rageMusic: {fileID: 0}
+  volumeRageMusic: 0
+  volumeMusic: 0
   pitchMusic: 1
   rapidMusic: 0
   accelerationMusic: 1

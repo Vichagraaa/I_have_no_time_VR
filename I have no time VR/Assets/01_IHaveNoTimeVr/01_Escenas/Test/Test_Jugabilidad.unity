@@ -629,6 +629,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: -81.93, y: 99.946, z: -164.75}
+<<<<<<< HEAD
 --- !u!1 &104639471
 GameObject:
   m_ObjectHideFlags: 0
@@ -723,6 +724,9 @@ Transform:
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &203505036
+=======
+--- !u!1 &322939423
+>>>>>>> parent of e78b0b8 (Estatura)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

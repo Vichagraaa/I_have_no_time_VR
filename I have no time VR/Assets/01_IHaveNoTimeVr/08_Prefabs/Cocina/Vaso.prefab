@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5765963816033316386}
   - component: {fileID: 4916973915260779550}
   - component: {fileID: 2795099481645614492}
-  - component: {fileID: 1334050130692884725}
   - component: {fileID: -6268113899069106769}
   - component: {fileID: -2119662279033037807}
   - component: {fileID: 8759983594435539612}
+  - component: {fileID: 6354492258949657836}
   m_Layer: 0
   m_Name: Vaso
   m_TagString: Untagged
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1357492039319133036}
   m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
   m_LocalPosition: {x: -3.4455404, y: 2.454719, z: 0.5579721}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -102,20 +102,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &1334050130692884725
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357492039319133036}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.0022223205, y: 0.0022601997, z: 0.002847922}
-  m_Center: {x: 0.000022724644, y: 0.0000037878751, z: -0.000032356755}
+  m_CollisionDetection: 1
 --- !u!114 &-6268113899069106769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,5 +177,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
-  particula: {fileID: 7417692256413052700, guid: b87a6bc516cc4e042ab6c07e3e6ddc6f, type: 3}
   tamano: 10
+--- !u!64 &6354492258949657836
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357492039319133036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 8476567016535443079, guid: 3939330e48ed6bc48a0776f84fe77511, type: 3}

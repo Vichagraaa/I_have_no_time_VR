@@ -191,7 +191,7 @@ Transform:
   m_GameObject: {fileID: 4486849880215551622}
   m_LocalRotation: {x: -0.50000006, y: -0.4999999, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 7.657131, y: 1.5183178, z: 0.0026845932}
-  m_LocalScale: {x: 100, y: 100, z: 100}
+  m_LocalScale: {x: 15, y: 15, z: 15}
   m_Children:
   - {fileID: 7349235687168582094}
   - {fileID: 6922064191503979699}
@@ -201,7 +201,7 @@ Transform:
   - {fileID: 80298547107440586}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!33 &5358116404024265757
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -343,7 +343,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
-  particula: {fileID: 7417692256413052700, guid: b87a6bc516cc4e042ab6c07e3e6ddc6f, type: 3}
   tamano: 50
 --- !u!1 &5306998742782606273
 GameObject:

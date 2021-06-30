@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 4630029421266434023}
   - component: {fileID: 752686550583715018}
   - component: {fileID: 5967929194968270820}
+  - component: {fileID: 6039541604744936268}
   m_Layer: 0
   m_Name: Ruedas
   m_TagString: Untagged
@@ -777,6 +778,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &6039541604744936268
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014386241390361714}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &2034860436393309204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1363,7 @@ GameObject:
   - component: {fileID: 3678060041295181817}
   - component: {fileID: 8837447674630660645}
   - component: {fileID: 2450416363972733040}
+  - component: {fileID: 3667224657531651579}
   m_Layer: 0
   m_Name: Asiento
   m_TagString: Untagged
@@ -1438,6 +1454,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &3667224657531651579
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3942784887862987060}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &4007823047961340956
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,6 +2230,7 @@ GameObject:
   - component: {fileID: 2846246468923008995}
   - component: {fileID: 4923337452646424237}
   - component: {fileID: 2470545033756692114}
+  - component: {fileID: 344588186931725431}
   m_Layer: 0
   m_Name: parte interior
   m_TagString: Untagged
@@ -2302,6 +2333,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &344588186931725431
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6026643489587841045}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &6136506384113951744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,6 +2921,7 @@ GameObject:
   - component: {fileID: 3222687266181547378}
   - component: {fileID: 1952390810930840146}
   - component: {fileID: 5358511273544321840}
+  - component: {fileID: 7208298872391900670}
   m_Layer: 0
   m_Name: Asiento (1)
   m_TagString: Untagged
@@ -2966,6 +3012,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &7208298872391900670
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7908529813412954705}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &7984335397108490074
 GameObject:
   m_ObjectHideFlags: 0

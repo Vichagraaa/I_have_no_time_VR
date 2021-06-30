@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 7475613538413200123}
   - component: {fileID: 5886989435369446077}
   - component: {fileID: 253294772536841241}
+  - component: {fileID: 7663514501044650896}
   m_Layer: 0
   m_Name: Puerta4
   m_TagString: Untagged
@@ -379,6 +380,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &7663514501044650896
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334814309587001391}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &1382879577310728362
 GameObject:
   m_ObjectHideFlags: 0
@@ -906,6 +921,7 @@ GameObject:
   - component: {fileID: 7238018987414577941}
   - component: {fileID: 7923389126586632402}
   - component: {fileID: 1495403671282003894}
+  - component: {fileID: 6281594149736807249}
   m_Layer: 0
   m_Name: Puerta2
   m_TagString: Untagged
@@ -998,6 +1014,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &6281594149736807249
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2177548645584293520}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &2733173344360578522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1626,9 @@ GameObject:
   - component: {fileID: 6974165267940038628}
   - component: {fileID: 7369147444312491177}
   - component: {fileID: 1037793856176597455}
+  - component: {fileID: 7654466430228401554}
+  - component: {fileID: 6571935645788012573}
+  - component: {fileID: 1041167745831574826}
   m_Layer: 0
   m_Name: Auto
   m_TagString: Untagged
@@ -1698,6 +1731,81 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7654466430228401554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761331565848516605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e07d5c0e85c4dc469e6612859516871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
+  tamano: 100
+--- !u!114 &6571935645788012573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761331565848516605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  part: 0
+--- !u!114 &1041167745831574826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4761331565848516605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 0}
+  iraPoints: 0
+  sumeIra: 0
+  body: {fileID: 0}
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  handType: 0
+  singleHandOnly: 0
+  parentOnGrab: 1
+  releaseOnTeleport: 0
+  lockHandOnGrab: 0
+  hightlightMaterial: {fileID: 0}
+  throwMultiplyer: 1
+  pullApartBreakOnly: 1
+  makeChildrenGrabbable: 1
+  jointBreakForce: 1200
+  jointBreakTorque: 1200
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  hideEvents: 0
 --- !u!1 &5075022302922368605
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,6 +1863,7 @@ GameObject:
   - component: {fileID: 2195820505948983518}
   - component: {fileID: 2314904658465306562}
   - component: {fileID: 3141382747973682025}
+  - component: {fileID: 5562977006926927722}
   m_Layer: 0
   m_Name: Capo
   m_TagString: Untagged
@@ -1856,6 +1965,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &5562977006926927722
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128428920126986351}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &5244005956538285040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2035,7 @@ GameObject:
   - component: {fileID: 7589406975879112549}
   - component: {fileID: 4496915909070893060}
   - component: {fileID: 2743570979526527141}
+  - component: {fileID: 4341284114605646347}
   m_Layer: 0
   m_Name: Puerta3
   m_TagString: Untagged
@@ -2005,6 +2129,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &4341284114605646347
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5324664617523059937}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &5943346323352160119
 GameObject:
   m_ObjectHideFlags: 0
@@ -2840,6 +2978,7 @@ GameObject:
   - component: {fileID: 4690515810368409148}
   - component: {fileID: 2243766364189090576}
   - component: {fileID: 3121235431009647203}
+  - component: {fileID: 1853013711870869325}
   m_Layer: 0
   m_Name: Puerta1
   m_TagString: Untagged
@@ -2932,6 +3071,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!138 &1853013711870869325
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7984335397108490074}
+  m_ConnectedBody: {fileID: 1037793856176597455}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &8146891252530960679
 GameObject:
   m_ObjectHideFlags: 0

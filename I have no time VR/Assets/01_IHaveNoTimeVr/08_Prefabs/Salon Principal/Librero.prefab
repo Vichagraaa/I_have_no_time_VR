@@ -442,6 +442,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4681530528146927011}
   - component: {fileID: -7305417353230330594}
+  - component: {fileID: 2649196436003480168}
+  - component: {fileID: 6312530818336009459}
+  - component: {fileID: 7094904773056710990}
   m_Layer: 0
   m_Name: Librero
   m_TagString: Untagged
@@ -482,6 +485,81 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &2649196436003480168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5454971419612444441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e07d5c0e85c4dc469e6612859516871, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
+  tamano: 60
+--- !u!114 &6312530818336009459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5454971419612444441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  part: 0
+--- !u!114 &7094904773056710990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5454971419612444441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 1
+  gamemanager: {fileID: 0}
+  iraPoints: 0
+  sumeIra: 0
+  body: {fileID: 0}
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  handType: 0
+  singleHandOnly: 0
+  parentOnGrab: 1
+  releaseOnTeleport: 0
+  lockHandOnGrab: 0
+  hightlightMaterial: {fileID: 0}
+  throwMultiplyer: 1
+  pullApartBreakOnly: 1
+  makeChildrenGrabbable: 1
+  jointBreakForce: 1200
+  jointBreakTorque: 1200
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  hideEvents: 0
 --- !u!1 &5484909682173250015
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,7 +660,8 @@ GameObject:
   - component: {fileID: 7499281315942987838}
   - component: {fileID: 5255820469477474793}
   - component: {fileID: 5418160138251301113}
-  - component: {fileID: 6301799802034968338}
+  - component: {fileID: 7569108294958228985}
+  - component: {fileID: 3688722965969200568}
   m_Layer: 0
   m_Name: Librero_puerta02
   m_TagString: Untagged
@@ -668,7 +747,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5649848, y: 0.11177789, z: 1.9829707}
   m_Center: {x: -1.6149888, y: -0.9743733, z: 1.5926989}
---- !u!54 &6301799802034968338
+--- !u!54 &7569108294958228985
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -683,7 +762,21 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
+--- !u!138 &3688722965969200568
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6790304784406902010}
+  m_ConnectedBody: {fileID: -7305417353230330594}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &6883627532330390449
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,7 +833,8 @@ GameObject:
   - component: {fileID: 5646786899394228469}
   - component: {fileID: 1637457385522603791}
   - component: {fileID: 5597930677037315944}
-  - component: {fileID: 977674719312815332}
+  - component: {fileID: 1521946969923701430}
+  - component: {fileID: 591742902129120033}
   m_Layer: 0
   m_Name: Librero_puerta01
   m_TagString: Untagged
@@ -826,7 +920,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.5649846, y: 0.111778006, z: 1.9829707}
   m_Center: {x: 1.6128265, y: -1.019608, z: 1.5926989}
---- !u!54 &977674719312815332
+--- !u!54 &1521946969923701430
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -841,7 +935,21 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
+--- !u!138 &591742902129120033
+FixedJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8801543673916727117}
+  m_ConnectedBody: {fileID: -7305417353230330594}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &9218876665919974316
 GameObject:
   m_ObjectHideFlags: 0

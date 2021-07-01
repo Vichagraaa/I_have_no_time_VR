@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 8233861191519749933}
   - component: {fileID: 8233861191519749934}
   - component: {fileID: 1267312094057915128}
+  - component: {fileID: 4870948242070729923}
+  - component: {fileID: 6173665030856502974}
   m_Layer: 0
   m_Name: Rueda
   m_TagString: Untagged
@@ -130,3 +132,64 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5859505246589164098, guid: 0f3e979beed37ee46a6d056c76563669, type: 3}
+--- !u!114 &4870948242070729923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690939925537371676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 822bc9090447b9c40833509c4a32e597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masa: 0
+  tamanoObjeto: 0
+  gamemanager: {fileID: 0}
+  iraPoints: 0
+  sumeIra: 0
+  body: {fileID: 0}
+  heldPositionOffset: {x: 0, y: 0, z: 0}
+  heldRotationOffset: {x: 0, y: 0, z: 0}
+  handType: 0
+  singleHandOnly: 0
+  parentOnGrab: 1
+  releaseOnTeleport: 0
+  lockHandOnGrab: 0
+  hightlightMaterial: {fileID: 0}
+  throwMultiplyer: 1
+  pullApartBreakOnly: 1
+  makeChildrenGrabbable: 1
+  jointBreakForce: 1200
+  jointBreakTorque: 1200
+  onGrab:
+    m_PersistentCalls:
+      m_Calls: []
+  onRelease:
+    m_PersistentCalls:
+      m_Calls: []
+  onSqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  onUnsqueeze:
+    m_PersistentCalls:
+      m_Calls: []
+  OnJointBreak:
+    m_PersistentCalls:
+      m_Calls: []
+  hideEvents: 0
+--- !u!114 &6173665030856502974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7690939925537371676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  part: 0

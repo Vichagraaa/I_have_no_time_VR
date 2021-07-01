@@ -37,13 +37,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6704551847409396644}
   m_LocalRotation: {x: -0.7071067, y: -0.000000030908616, z: 0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -11.531071, y: 0.8546009, z: 0.15226722}
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children:
   - {fileID: 8483805271859892815}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 90}
 --- !u!33 &1168867026733251856
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -292,7 +292,7 @@ GameObject:
   - component: {fileID: 2487738982750708105}
   - component: {fileID: 4349059197030745131}
   - component: {fileID: 3564551118780844245}
-  - component: {fileID: 5011294736631756329}
+  - component: {fileID: 5208320862167742921}
   m_Layer: 0
   m_Name: puerta_horno
   m_TagString: Untagged
@@ -381,7 +381,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &4349059197030745131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.020230941, y: 0.0011459196, z: 0.0012872365}
   m_Center: {x: -0.01, y: -0.0029474965, z: 0.012665479}
---- !u!138 &5011294736631756329
+--- !u!138 &5208320862167742921
 FixedJoint:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

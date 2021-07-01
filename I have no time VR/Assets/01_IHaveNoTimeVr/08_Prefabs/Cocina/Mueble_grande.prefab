@@ -102,7 +102,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &3604051254882499822
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -245,7 +245,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &3555840621389882763
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &8534584694738499178
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -531,7 +531,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &2234573614565988332
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -678,7 +678,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &4084103752144086008
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -873,7 +873,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &395180087826976570
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -956,7 +956,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6781303060372266818}
   m_LocalRotation: {x: -0.7071067, y: -0.000000030908616, z: 0.000000030908623, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.9997525, y: 2.6992354, z: -0.067242935}
   m_LocalScale: {x: 40, y: 40, z: 40}
   m_Children:
   - {fileID: 8618921672206733722}
@@ -968,7 +968,7 @@ Transform:
   - {fileID: 1030668770421841719}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
 --- !u!33 &3365365266656713623
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1369,7 +1369,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!65 &754785048014492364
 BoxCollider:
   m_ObjectHideFlags: 0

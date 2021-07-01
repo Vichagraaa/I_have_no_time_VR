@@ -12,6 +12,7 @@ public class StarManager : MonoBehaviour
     public int puntos;
 
     // Puntos para obtener estrellas.
+    public int niunaEstrella;
     public int unaEstrella;
     public int dosEstrellas;
     public int tresEstrellas;
@@ -25,7 +26,12 @@ public class StarManager : MonoBehaviour
     {
         if(recuento == true)
         {
-            if(puntos <= unaEstrella)
+            if (puntos < unaEstrella)
+            {
+                NiunaEstrella();
+            }
+
+            if (puntos > unaEstrella && puntos < dosEstrellas)
             {
                 UnaEstrella();
             }
@@ -40,6 +46,11 @@ public class StarManager : MonoBehaviour
                 TresEstrella();
             }
         }
+    }
+
+    void NiunaEstrella()
+    {
+
     }
 
     void UnaEstrella()

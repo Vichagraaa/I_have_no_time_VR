@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class ObjetoCajeable : MonoBehaviour
 {
+    // referencia al star manager
+    public StarManager sm;
+
     // Objeto instanciable, la cajita.
     public GameObject cajita;
     public GameObject particula;
@@ -14,7 +17,11 @@ public class ObjetoCajeable : MonoBehaviour
 
     // Booleanos de reconocimiento de camion
     bool enCamion = false;
-    
+
+    private void Start()
+    {
+        sm = GameObject.FindGameObjectWithTag("Star").GetComponent<StarManager>();
+    }
 
 
     // Revisará cuando entre en contacto con el interior del camión.
@@ -53,5 +60,9 @@ public class ObjetoCajeable : MonoBehaviour
         Destroy(gameObject); // Destruye el objeto pasados 3 segundos.
     }
 
-  
+    private void OnDestroy()
+    {
+        sm.puntos++;
+    }
+
 }

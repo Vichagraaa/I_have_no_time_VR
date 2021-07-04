@@ -13350,7 +13350,7 @@ Transform:
   m_LocalScale: {x: 99.99998, y: 99.99998, z: 100}
   m_Children: []
   m_Father: {fileID: 543450652118896132}
-  m_RootOrder: 45
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1359744593
 MonoBehaviour:
@@ -17701,7 +17701,7 @@ PrefabInstance:
       objectReference: {fileID: 595081837}
     - target: {fileID: 1343766982181956779, guid: 79960d58cfaaa24418161627afb5f992, type: 3}
       propertyPath: objetosTotal
-      value: 32
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3671191433510819354, guid: 79960d58cfaaa24418161627afb5f992, type: 3}
       propertyPath: cFinal
@@ -17721,15 +17721,15 @@ PrefabInstance:
       objectReference: {fileID: 2136984508}
     - target: {fileID: 3671191433510819354, guid: 79960d58cfaaa24418161627afb5f992, type: 3}
       propertyPath: unaEstrella
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3671191433510819354, guid: 79960d58cfaaa24418161627afb5f992, type: 3}
       propertyPath: dosEstrellas
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3671191433510819354, guid: 79960d58cfaaa24418161627afb5f992, type: 3}
       propertyPath: tresEstrellas
-      value: 32
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6637097368567890990, guid: 79960d58cfaaa24418161627afb5f992, type: 3}
       propertyPath: m_RootOrder
@@ -20087,11 +20087,11 @@ Transform:
   - {fileID: 1742424142}
   - {fileID: 1118980145}
   - {fileID: 508734489}
+  - {fileID: 1359744592}
   - {fileID: 727975953}
   - {fileID: 1510851449}
   - {fileID: 239048648}
   - {fileID: 927106012}
-  - {fileID: 1359744592}
   - {fileID: 1585301149}
   - {fileID: 667876611}
   - {fileID: 489363485}

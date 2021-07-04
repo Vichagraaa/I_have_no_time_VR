@@ -12,6 +12,7 @@ TagManager:
   - Caja
   - Cinturon
   - Mazo
+  - Star
   layers:
   - Default
   - TransparentFX

@@ -2495,6 +2495,7 @@ MonoBehaviour:
   Alarma: {fileID: 0}
   pauseMenu: {fileID: 1364441418984419110}
   finalCanvas: {fileID: 1364441418984419110}
+  sm: {fileID: 0}
   nIra: {fileID: 0}
   countIra: 51
   limitIra: 10

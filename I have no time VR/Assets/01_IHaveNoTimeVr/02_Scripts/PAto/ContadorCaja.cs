@@ -9,6 +9,7 @@ public class ContadorCaja : MonoBehaviour
     public Text objetos;
     public int objetosTotal;
     public Text win;
+    public StarManager sm;
     public GameObject wina;
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,7 @@ public class ContadorCaja : MonoBehaviour
         }
         if(contador==objetosTotal)
         {
+            sm.recuento = true;
             wina.gameObject.SetActive(true);
             Invoke("GanaDoc", 3f);
         }

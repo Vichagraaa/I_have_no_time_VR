@@ -60,6 +60,7 @@ public class MenuActivarPrueba : MonoBehaviour
 
     //Menu final
     public GameObject finalCanvas;
+    public StarManager sm;
 
     //Ira
     public GameObject nIra;
@@ -127,6 +128,7 @@ public class MenuActivarPrueba : MonoBehaviour
             {
                 normalizeMusic();
                 finalCanvas.SetActive(true);
+                sm.recuento = true;
                 gameFinish = true;
             }
         }
@@ -240,14 +242,17 @@ public class MenuActivarPrueba : MonoBehaviour
 
     void subirVolumenIra()
     {
+        rageMusic.Play();
         DOTween.To(() => rageMusic.volume, x => rageMusic.volume = x, 1, volumeRageMusic).SetDelay(1).SetEase(Ease.Linear);
         DOTween.To(() => levelMusic.volume, x => levelMusic.volume = x, 0, volumeMusic).SetDelay(1).SetEase(Ease.Linear);
     }
 
     void bajarVolumenIra()
     {
+
         DOTween.To(() => rageMusic.volume, x => rageMusic.volume = x, 0, volumeRageMusic).SetDelay(1).SetEase(Ease.Linear);
         DOTween.To(() => levelMusic.volume, x => levelMusic.volume = x, 1, volumeMusic).SetDelay(1).SetEase(Ease.Linear);
+        rageMusic.Stop();
     }
 
 

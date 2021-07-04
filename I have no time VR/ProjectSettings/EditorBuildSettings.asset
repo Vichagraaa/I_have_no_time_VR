@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01_IHaveNoTimeVr/01_Escenas/Test/Menu.unity
-    guid: 85fe4578528bc544f9bff14c56c85b58
+    path: Assets/01_IHaveNoTimeVr/01_Escenas/Finales/Menu_02.unity
+    guid: 42a2f54fcf7260749ac557cfd692605f
   - enabled: 1
-    path: Assets/01_IHaveNoTimeVr/01_Escenas/Test/Nivel_1.unity
-    guid: 3e1c58fa455cbc7469a7bb16031a35ec
+    path: Assets/01_IHaveNoTimeVr/01_Escenas/Finales/Nivel_Garage.unity
+    guid: 5f4d10fefb554004db8fc2741c8c068f
   - enabled: 1
-    path: Assets/01_IHaveNoTimeVr/01_Escenas/Test/Nivel_2.unity
-    guid: 4e9551a25fb92374ab04fb276497f798
+    path: Assets/01_IHaveNoTimeVr/01_Escenas/Finales/Nivel_Casa.unity
+    guid: aa967eac49dbff241a71863b9789b652
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2db0a3cf372631f489b54ccd7ca1ddef, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: b75e31b005c07bd4f91eb1bb3ea29dee, type: 2}

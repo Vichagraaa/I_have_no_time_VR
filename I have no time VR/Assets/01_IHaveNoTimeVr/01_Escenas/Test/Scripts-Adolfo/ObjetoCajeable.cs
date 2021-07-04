@@ -18,10 +18,7 @@ public class ObjetoCajeable : MonoBehaviour
     // Booleanos de reconocimiento de camion
     bool enCamion = false;
 
-    private void Start()
-    {
-        sm = GameObject.FindGameObjectWithTag("Star").GetComponent<StarManager>();
-    }
+    
 
 
     // Revisará cuando entre en contacto con el interior del camión.

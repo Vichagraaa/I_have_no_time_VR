@@ -7,6 +7,9 @@ public class StarManager : MonoBehaviour
 {
     // Canvas de termino de nivel.
     public Canvas cFinal;
+    public GameObject Estrella1;
+    public GameObject Estrella2;
+    public GameObject Estrella3;
 
     // Puntos de jugador
     public int puntos;
@@ -31,12 +34,12 @@ public class StarManager : MonoBehaviour
                 NiunaEstrella();
             }
 
-            if (puntos > unaEstrella && puntos < dosEstrellas)
+            if (puntos >= unaEstrella )
             {
                 UnaEstrella();
             }
 
-            if (puntos > unaEstrella && puntos < tresEstrellas)
+            if (puntos >= dosEstrellas)
             {
                 DosEstrella();
             }
@@ -50,21 +53,24 @@ public class StarManager : MonoBehaviour
 
     void NiunaEstrella()
     {
+        Estrella1.SetActive(false);
+        Estrella2.SetActive(false);
+        Estrella3.SetActive(false);
 
     }
 
     void UnaEstrella()
     {
-
+        Estrella1.SetActive(true); Estrella2.SetActive(false); Estrella3.SetActive(false);
     }
 
     void DosEstrella()
     {
-
+        Estrella1.SetActive(true); Estrella2.SetActive(true); Estrella3.SetActive(false);
     }
 
     void TresEstrella()
     {
-
+        Estrella1.SetActive(true); Estrella2.SetActive(true); Estrella3.SetActive(true);
     }
 }

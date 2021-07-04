@@ -1596,6 +1596,7 @@ MonoBehaviour:
   gamemanager: {fileID: 7051256638993170769}
   iraPoints: 0
   sumeIra: 0
+  denegado: {fileID: 0}
   body: {fileID: 0}
   heldPositionOffset: {x: 0, y: 0, z: 0}
   heldRotationOffset: {x: 0, y: 0, z: 0}

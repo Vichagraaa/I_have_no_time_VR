@@ -23,6 +23,7 @@ namespace Autohand {
         public int iraPoints = 0;
         public bool sumeIra = false;
         private XRController xr;
+        public AudioSource denegado;
 
 
         [Header("Holding Settings")]
@@ -275,6 +276,12 @@ namespace Autohand {
                 if(tamanoObjeto==TamanoOjeto.Grande)
                 {
                     ActivateHaptic();
+                    if(gamemanager.full==false)
+                    {
+                    denegado.Play();
+                    }
+                
+                    
                 }
 
             if (lockHandOnGrab)

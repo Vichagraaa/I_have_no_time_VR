@@ -307,7 +307,7 @@ public class MenuActivarPrueba : MonoBehaviour
     {
 
         restando = true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         countIra--;
         
         restando = false;

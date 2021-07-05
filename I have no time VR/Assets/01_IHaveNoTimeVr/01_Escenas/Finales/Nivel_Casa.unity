@@ -30311,7 +30311,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148064925042}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.023, y: 0, z: 1.0402672}
+  m_LocalPosition: {x: -12.023, y: 0.023, z: 1.0402672}
   m_LocalScale: {x: 0.11256928, y: 0.11256928, z: 0.11256928}
   m_Children:
   - {fileID: 8879528567907991382}
@@ -30496,6 +30496,7 @@ GameObject:
   - component: {fileID: 919132148064925045}
   - component: {fileID: 919132148064925044}
   - component: {fileID: 919132148064925043}
+  - component: {fileID: 919132148064925046}
   m_Layer: 0
   m_Name: Puppy
   m_TagString: Untagged
@@ -30518,7 +30519,7 @@ MonoBehaviour:
   sm: {fileID: 44471809}
   cajita: {fileID: 1035762994593870592, guid: e3dfcb482ee288c42a3ecaf325384c78, type: 3}
   particula: {fileID: 7417692256413052700, guid: b87a6bc516cc4e042ab6c07e3e6ddc6f, type: 3}
-  tamano: 15
+  tamano: 25
 --- !u!114 &919132148064925044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30531,7 +30532,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5951d30553dac0e48afefb23878ff8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7417692256413052700, guid: d923f1a5c7ecdab47b4bc15fdfc5032a, type: 3}
+  prefab: {fileID: 7417692256413052700, guid: 34343079df005f7439222cf3032a1a20, type: 3}
   part: 0
 --- !u!114 &919132148064925045
 MonoBehaviour:
@@ -30581,6 +30582,22 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   hideEvents: 0
+--- !u!54 &919132148064925046
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148064925042}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!1 &1211453760294035217
 GameObject:
   m_ObjectHideFlags: 0
@@ -31244,7 +31261,7 @@ GameObject:
   - component: {fileID: 8107165758163685568}
   m_Layer: 0
   m_Name: Puppy
-  m_TagString: Untagged
+  m_TagString: Caja
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34462,6 +34479,10 @@ PrefabInstance:
     - target: {fileID: 5763127744938320669, guid: f7b2b81285113e54ea8ff76d44461d85, type: 3}
       propertyPath: m_Name
       value: Repisa
+      objectReference: {fileID: 0}
+    - target: {fileID: 6005222151351116940, guid: f7b2b81285113e54ea8ff76d44461d85, type: 3}
+      propertyPath: m_TagString
+      value: Caja
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7b2b81285113e54ea8ff76d44461d85, type: 3}
